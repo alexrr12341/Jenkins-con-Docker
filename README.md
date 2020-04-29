@@ -24,3 +24,5 @@ Vamos a utilizar una máquina Debian Buster que contendrá los siguientes progra
 * Queremos aprender el uso de los plugins de Docker y de las métricas de Jenkins.
 * Saber con soltura el uso de los Jenkinsfile y manejar los pipelines de Jenkins
 
+
+El proyecto lo encontraremos [aqui](./Proyecto.md)
