@@ -4,7 +4,9 @@
    - [Descripción del proyecto](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#11-descripci%C3%B3n-del-proyecto)
    - [Escenario](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#12-escenario)
 2. [¿Qué es Jenkins?](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#2-qu%C3%A9-es-jenkins)
-
+3. [¿Qué es Docker?]()
+   - [Contenedores]()
+   - [Docker]()
 x. [Webgrafía]()
 ## 1. Introducción
 
@@ -29,6 +31,14 @@ La máquina jenkins será la que tenga alojada jenkins y actuará como servidor 
 
 Jenkins ayuda en la automatización de parte del proceso de desarrollo de software mediante **integración continua** y facilita ciertos aspectos de la **entrega continua**. Admite herramientas de control de versiones como **CVS, Subversion, Git, Mercurial, Perforce y Clearcase** y puede ejecutar proyectos basados en **Apache Ant y Apache Maven**, así como secuencias de comandos de consola y programas por lotes de Windows. El desarrollador principal es **Kohsuke Kawaguchi**. Publicado bajo licencia **MIT**, Jenkins es **software libre**.​ 
 
+## 3. ¿Qué es Docker?
+
+### 3.1. Contenedores
+Los contenedores le ofrecen un modo estándar de **empaquetar el código, las configuraciones y las dependencias de su aplicación en un único objeto**. Los contenedores **comparten un sistema operativo** instalado en el servidor, y se **ejecutan como procesos aislados de los recursos**, lo que garantiza **implementaciones rápidas, fiables y consistentes** sea cual sea el entorno en el que se realizan. 
+
+
+### 3.2. Docker
+Docker es un proyecto de **código abierto** que **automatiza el despliegue de aplicaciones** dentro de **contenedores de software**, proporcionando una capa adicional de abstracción y automatización de virtualización de aplicaciones en múltiples sistemas operativos. Docker utiliza características de aislamiento de recursos del kernel Linux, tales como **cgroups** y **espacios de nombres** (namespaces) para permitir que "contenedores" independientes se **ejecuten dentro de una sola instancia de Linux**, evitando la **sobrecarga** de iniciar y mantener máquinas virtuales.
 
 ## x. Webgrafía
 
