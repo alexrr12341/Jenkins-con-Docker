@@ -3,6 +3,7 @@
 1. [Introducción](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#1-introducción)
    - [Descripción del proyecto](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#11-descripci%C3%B3n-del-proyecto)
    - [Escenario](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#12-escenario)
+2. [¿Qué es Jenkins?]()
 ## 1. Introducción
 
 ### 1.1. Descripción del proyecto
@@ -20,3 +21,5 @@ La máquina jenkins será la que tenga alojada jenkins y actuará como servidor 
 
 * Jenkins (172.22.201.144): Debian Buster 10.3, 2 Cpus, 4 GB RAM, 20 GB espacio
 * Desarrollo (172.22.200.55): Debian Buster 10.3, 2 Cpus, 1 GB RAM, 10 GB espacio
+
+## 2. ¿Qué es Jenkins?
