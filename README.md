@@ -11,13 +11,18 @@ Vamos a utilizar la tecnología de Jenkins para verificar ciertos parámetros a 
 
 **Tecnologías que se van a usar**
 
-Vamos a utilizar una máquina Debian Buster que contendrá los siguientes programas:
+Vamos a utilizar dos máquinas Debian Buster.
+
+La primera, que contendrá los siguientes programas:
 
 * Docker.io
 * Jenkins y sus plugins
 * Prometheus
 * Grafana
 
+La segunda, que contendrá el siguiente programa:
+
+* Docker.io
 
 **Resultados esperados**
 
