@@ -20,9 +20,10 @@ La primera, que contendrá los siguientes programas:
 * Prometheus
 * Grafana
 
-La segunda, que contendrá el siguiente programa:
+La segunda, que contendrá los siguientes programas:
 
 * Docker.io
+* Git
 
 **Resultados esperados**
 
