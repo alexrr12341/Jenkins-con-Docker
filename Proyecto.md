@@ -17,3 +17,6 @@ La máquina jenkins será la que tenga alojada jenkins y actuará como servidor 
 ### 1.2. Escenario
 
 ![](./escenario.png)
+
+* Jenkins (172.22.201.144): Debian Buster 10.3, 2 Cpus, 4 GB RAM, 20 GB espacio
+* Desarrollo (172.22.200.55): Debian Buster 10.3, 2 Cpus, 1 GB RAM, 10 GB espacio
