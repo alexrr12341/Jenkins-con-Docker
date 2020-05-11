@@ -11,7 +11,7 @@
    - [Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#32-docker)
    - [Jenkins](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#35-jenkins)
       - [Via Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#32-docker)
-x. [Webgrafía]()
+10. [Webgrafía]()
 ## 1. Introducción
 
 ### 1.1. Descripción del proyecto
@@ -59,6 +59,6 @@ Esta instalación lo haremos en ambas máquinas.
 
 
 
-## x. Webgrafía
+## 10. Webgrafía
 
 [Instalación de Jenkins](https://www.jenkins.io/doc/book/installing/)
