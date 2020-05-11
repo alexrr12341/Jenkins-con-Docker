@@ -14,6 +14,10 @@
       - [Via Apt](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#422-via-apt)
    - [Prometheus](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#43-prometheus)
    - [Grafana](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#44-grafana)
+5. [Plugins](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#5-plugins)
+   - [Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#51-docker)
+   - [Blue Ocean](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#52-blue-ocean)
+   - [Prometheus](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#53-prometheus)
 10. [Webgrafía](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#10-webgraf%C3%ADa)
 ## 1. Introducción
 
@@ -130,6 +134,38 @@ Vamos a realizar la instalación de grafanas por docker, por lo que tendremos qu
 docker run -d --name grafana -p 3000:3000 grafana/grafana
 ```
 
+## 5. Plugins
+
+### 5.1. Docker
+
+Para la instalación de este plugin es muy sencilla, debemos ir a Manage Jenkins -> Manage Plugins -> Available, Buscamos docker en el buscador y le damos el tick al que pone Docker y la opción de 'Download now and install after restart'.
+Este plugin lo que hará es que podramos integrar los comandos de docker en nuestros pipelines de Jenkins.
+
+Para poder acceder al cloud de docker, debemos en nuestra configuración de docker, añadir la siguiente línea (/etc/default/docker):
+```
+DOCKER_OPTS="-H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock"
+```
+
+Y en Configure Clouds de jenkins añadimos la ip de la máquina, en este caso tcp://172.17.0.1:2376
+
+
+### 5.2. Blue Ocean
+
+Para la instalación es como el anterior, debemos ir a Manage Jenkins -> Manage Plugins -> Available, buscar blueocean en el buscador y le damos tick al que pone Blue Ocean, y Blue Ocean Pipeline Editor y la opción de 'Download now and install after restart'.
+
+Blue Ocean es un plugin de jenkins por el cual podremos ver todas las funcionalidades de un Pipeline y ver los resultados obtenidos de cada uno.
+
+### 5.3. Prometheus
+
+Para instalar este plugin, debemos ir a Manage Jenkins -> Manage Plugins -> Available y buscar el que pone: Prometheus metrics, y le damos tick y a la opción de 'Download now and install after restart'.
+
+Esto lo que hará es que Jenkins se pueda comunicar con prometheus para analizar las métricas.
+
+
+
+
 ## 10. Webgrafía
 
 [Instalación de Jenkins](https://www.jenkins.io/doc/book/installing/)
+[Monitorización de Jenkins](https://medium.com/@eng.mohamed.m.saeed/monitoring-jenkins-with-grafana-and-prometheus-a7e037cbb376)
+[Plugin de Docker](https://plugins.jenkins.io/docker-plugin/)
