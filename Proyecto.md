@@ -7,11 +7,11 @@
 3. [¿Qué es Docker?](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#3-qu%C3%A9-es-docker)
    - [Contenedores](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#31-contenedores)
    - [Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#32-docker)
-4. [Instalaciones](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#33-instalaciones)7
-   - [Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#32-docker)
-   - [Jenkins](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#35-jenkins)
-      - [Via Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#32-docker)
-      - [Via Apt](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#32-docker)
+4. [Instalaciones](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#4-instalaciones)
+   - [Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#41-docker)
+   - [Jenkins](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#42-jenkins)
+      - [Via Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#421-via-docker)
+      - [Via Apt](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#422-via-apt)
 10. [Webgrafía](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#10-webgraf%C3%ADa)
 ## 1. Introducción
 
