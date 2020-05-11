@@ -12,6 +12,8 @@
    - [Jenkins](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#42-jenkins)
       - [Via Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#421-via-docker)
       - [Via Apt](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#422-via-apt)
+   - [Prometheus](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#43-prometheus)
+   - [Grafana](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#44-grafana)
 10. [Webgrafía](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#10-webgraf%C3%ADa)
 ## 1. Introducción
 
@@ -111,6 +113,22 @@ sudo apt-get install jenkins
 ```
 
 Después de la instalación, iremos a /var/jenkins_home/secrets para cojer la contraseña para acceder al panel web, que se accederá de la misma manera que en docker: http://jenkins:8080/
+
+### 4.3. Prometheus
+
+Vamos a realizar la instalación de prometheus via docker, por lo que solo tendremos que ejecutar el siguiente comando para que lo tengamos:
+
+```
+docker run -d --name prometheus -p 9090:9090 prom/prometheus
+```
+
+### 4.4. Grafana
+
+Vamos a realizar la instalación de grafanas por docker, por lo que tendremos que ejecutar el contenedor con la imagen de grafana:
+
+```
+docker run -d --name grafana -p 3000:3000 grafana/grafana
+```
 
 ## 10. Webgrafía
 
