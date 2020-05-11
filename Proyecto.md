@@ -7,6 +7,10 @@
 3. [¿Qué es Docker?](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#3-qu%C3%A9-es-docker)
    - [Contenedores](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#31-contenedores)
    - [Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#32-docker)
+4. [Instalaciones](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#33-instalaciones)7
+   - [Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#32-docker)
+   - [Jenkins]((https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#35-jenkins)
+      - [Via Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#32-docker)
 x. [Webgrafía]()
 ## 1. Introducción
 
@@ -39,6 +43,21 @@ Los contenedores le ofrecen un modo estándar de **empaquetar el código, las co
 
 ### 3.2. Docker
 Docker es un proyecto de **código abierto** que **automatiza el despliegue de aplicaciones** dentro de **contenedores de software**, proporcionando una capa adicional de abstracción y automatización de virtualización de aplicaciones en múltiples sistemas operativos. Docker utiliza características de aislamiento de recursos del kernel Linux, tales como **cgroups** y **espacios de nombres** (namespaces) para permitir que "contenedores" independientes se **ejecuten dentro de una sola instancia de Linux**, evitando la **sobrecarga** de iniciar y mantener máquinas virtuales.
+
+## 4. Instalaciones
+
+### 4.1. Docker
+En Debian 10 (Buster) implementaron en la paquetería la instalación de Docker mediante apt, entonces simplemente para instalarlo deberiamos hacer:
+```bash
+apt install docker.io
+```
+
+Esta instalación lo haremos en ambas máquinas.
+
+
+### 4.2. Jenkins
+
+
 
 ## x. Webgrafía
 
