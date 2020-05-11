@@ -11,6 +11,7 @@
    - [Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#32-docker)
    - [Jenkins](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#35-jenkins)
       - [Via Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#32-docker)
+      - [Via Apt](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#32-docker)
 10. [Webgrafía](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#10-webgraf%C3%ADa)
 ## 1. Introducción
 
@@ -57,7 +58,59 @@ Esta instalación lo haremos en ambas máquinas.
 
 ### 4.2. Jenkins
 
+### 4.2.1. Via Docker
 
+Para instalar Jenkins via Docker, debemos primero tener docker instalado como hemos hecho anteriormente, y luego cogemos la imágen de Jenkins de DockerHub, realizando el siguiente comando:
+```
+docker pull jenkins/jenkins
+```
+
+Teniendo dicha imagen, vamos ahora a lanzar el contenedor con el siguiente comando:
+```
+docker run -d --name jenkins -p 8080:8080 -p 50000:50000 -v /opt/jenkins_home:/var/jenkins_home jenkins/jenkins
+```
+
+Nos saltará el siguiente error a la hora de hacer el volumen persistente, ya que no tiene los permisos del usuario de jenkins
+```
+Can not write to /var/jenkins_home/copy_reference_file.log. Wrong volume permissions?
+touch: cannot touch '/var/jenkins_home/copy_reference_file.log': Permission denied
+```
+
+En la documentación de Jenkins nos sugieren cambiar los permisos de la carpeta por 1000, por lo que realizaremos el siguiente comando:
+
+```
+chown -R 1000 /opt/jenkins_home
+```
+
+Y volvemos a ejecutar el comando:
+
+```
+docker run --name jenkins -p 8080:8080 -p 50000:50000 -v /opt/jenkins_home:/var/jenkins_home jenkins
+```
+
+Vemos que la imagen está funcionando:
+
+```
+root@jenkins:~# docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                              NAMES
+4fe902387548        jenkins/jenkins     "/sbin/tini -- /usr/…"   6 seconds ago       Up 5 seconds        0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   jenkins
+
+```
+
+Y entramos al puerto 8080 de nuestra máquina para acceder al panel web: http://jenkins:8080/ y instalar los plugins necesarios. El código de verificación estará en este caso en /opt/jenkins_home/secrets
+
+### 4.2.2. Via Apt
+
+Para instalar Jenkins via Apt, debemos primero poner el repositorio de jenkins, para ello vamos a añadir una nueva entrada en nuestros repositorios, añadiremos la clave e instalaremos jenkins. Lo haremos con los siguientes comandos:
+
+```
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install jenkins
+```
+
+Después de la instalación, iremos a /var/jenkins_home/secrets para cojer la contraseña para acceder al panel web, que se accederá de la misma manera que en docker: http://jenkins:8080/
 
 ## 10. Webgrafía
 
