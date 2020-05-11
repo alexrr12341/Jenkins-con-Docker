@@ -18,6 +18,7 @@
    - [Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#51-docker)
    - [Blue Ocean](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#52-blue-ocean)
    - [Prometheus](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#53-prometheus)
+6. [Métricas](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#6-metricas)
 10. [Webgrafía](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#10-webgraf%C3%ADa)
 ## 1. Introducción
 
@@ -71,9 +72,14 @@ Para instalar Jenkins via Docker, debemos primero tener docker instalado como he
 docker pull jenkins/jenkins
 ```
 
+Vamos a crear una network para el futuro también
+```
+docker network create jenkins
+```
+
 Teniendo dicha imagen, vamos ahora a lanzar el contenedor con el siguiente comando:
 ```
-docker run -d --name jenkins -p 8080:8080 -p 50000:50000 -v /opt/jenkins_home:/var/jenkins_home jenkins/jenkins
+docker run -d --name jenkins --network jenkins -p 8080:8080 -p 50000:50000 -v /opt/jenkins_home:/var/jenkins_home jenkins/jenkins
 ```
 
 Nos saltará el siguiente error a la hora de hacer el volumen persistente, ya que no tiene los permisos del usuario de jenkins
@@ -123,7 +129,7 @@ Después de la instalación, iremos a /var/jenkins_home/secrets para cojer la co
 Vamos a realizar la instalación de prometheus via docker, por lo que solo tendremos que ejecutar el siguiente comando para que lo tengamos:
 
 ```
-docker run -d --name prometheus -p 9090:9090 prom/prometheus
+docker run --name prometheus --network jenkins -p 9090:9090  -d --mount type=bind,source=/opt/prometheus.yml,target=/etc/prometheus/prometheus.yml prom/prometheus
 ```
 
 ### 4.4. Grafana
@@ -131,7 +137,7 @@ docker run -d --name prometheus -p 9090:9090 prom/prometheus
 Vamos a realizar la instalación de grafanas por docker, por lo que tendremos que ejecutar el contenedor con la imagen de grafana:
 
 ```
-docker run -d --name grafana -p 3000:3000 grafana/grafana
+docker run -d --name grafana --network jenkins -p 3000:3000 grafana/grafana
 ```
 
 ## 5. Plugins
@@ -162,7 +168,32 @@ Para instalar este plugin, debemos ir a Manage Jenkins -> Manage Plugins -> Avai
 Esto lo que hará es que Jenkins se pueda comunicar con prometheus para analizar las métricas.
 
 
+### 6. Métricas
 
+Para la configuración de métricas, ya que tenemos prometheus y grafana disponibles, debemos conectar prometheus con el nodo de jenkins, para ello indicamos en el /opt/prometheus.yml el nuevo job para que pueda comunicarse
+
+```
+- job_name: 'jenkins'
+  metrics_path: /prometheus
+  static_configs:
+    - targets: ['jenkins:8080']
+```
+
+Para comprobar que va correctamente, simplemente entramos a http://jenkins:9090 y miramos que al lado del botón de Execute tenemos varios jenkins_*
+
+
+Ahora debemos conectar grafana con prometheus, por lo que vamos hacia http://jenkins:3000.
+
+Vamos a la opción donde pone 'Add data source' y seleccionamos la opción de Prometheus.
+
+La url en este caso será: http://prometheus:9090
+
+
+Para crear el dashboard de grafana, vamos hacia Home Dashboard -> New Dashboard y vamos creando los diferentes dashboards necesarios.
+
+En mi caso utilizaré la siguiente plantilla: https://grafana.com/grafana/dashboards/9524, que se puede poner en Import.
+
+![](./jenkins1.png)
 
 ## 10. Webgrafía
 
