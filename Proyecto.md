@@ -234,4 +234,4 @@ Su sintaxis sería la siguiente:
 
 [Plugin de Docker](https://plugins.jenkins.io/docker-plugin/)
 
-
+[Pipelines](https://sdos.es/blog/la-integracion-continua-actual-pasa-por-pipelines)
