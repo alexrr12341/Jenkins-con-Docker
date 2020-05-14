@@ -21,7 +21,7 @@
 6. [Métricas](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#6-métricas)
 7. [Pipelines](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#7-pipelines)
    - [¿Qué es un Pipeline?](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#71-qu%C3%A9-es-un-pipeline)
-   - [Pipeline Declarativo (Jenkinsfile)]()
+   - [Pipeline Declarativo (Jenkinsfile)](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#72-pipeline-declarativo-jenkinsfile)
 10. [Webgrafía](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#10-webgraf%C3%ADa)
 ## 1. Introducción
 
@@ -210,6 +210,22 @@ De esta forma, resulta mucho más sencillo replicar los diferentes pasos con dis
 
 Un pipeline declarativo es aquel que podemos crear, editar o configurar mediante una estructura definida que nos ayuda a entender y predecir los pasos del pipeline. Simplifica y da opciones a la sintaxis de los sub-sistemas de pipeline.
 Al igual que los descriptivos, los pipelines declarativos deben guardarse en un fichero Jenkinsfile para poder ser ejecutados luego por Jenkins.
+
+Su sintaxis sería la siguiente:
+
+```
+   * Pipeline {} Identificamos dónde empieza y termina el pipeline así como los pasos que tiene.
+
+   * Agent. Especificamos cuando se ejecuta el pipeline. Uno de los comandos más utilizados es any, para ejecutar el pipeline siempre y cuando haya un ejecutor libre en Jenkins.
+
+   * Stages. Bloque donde se definen una serie de estados a realizar dentro del pipeline.
+
+   * Stage. Bloque que define una serie de tareas realizadas dentro del pipeline, por ejemplo: Build. test, deploy, etc. Podemos utilizar varios plugins en Jenkins para visualizar el estado o el progreso de estos estados.
+   * Steps. Son todos los pasos a realizar dentro de un stage. Podemos definir uno o varios pasos.
+
+   * Step. Es una tarea simple dentro del pipeline. Fundamentalmente es un paso donde se le dice a Jenkins qué hacer en un momento específico o paso del proceso. Por ejemplo, para ejecutar un comando en shell podemos tener un paso en el que tengamos la línea 'sh ls' para mostrar el listado de ficheros de una carpeta.
+
+```
 
 ## 10. Webgrafía
 
