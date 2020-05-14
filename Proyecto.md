@@ -20,7 +20,8 @@
    - [Prometheus](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#53-prometheus)
 6. [Métricas](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#6-métricas)
 7. [Pipelines](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#7-pipelines)
-   - [¿Qué es un Pipeline?]()
+   - [¿Qué es un Pipeline?](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#71-qu%C3%A9-es-un-pipeline)
+   - [Pipeline Declarativo (Jenkinsfile)]()
 10. [Webgrafía](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#10-webgraf%C3%ADa)
 ## 1. Introducción
 
@@ -205,6 +206,10 @@ Un pipeline es una nueva forma de trabajar en el mundo devops en la integración
 
 De esta forma, resulta mucho más sencillo replicar los diferentes pasos con distintas aplicaciones y gestionar mejor los cambios en cada paso.
 
+### 7.2. Pipeline Declarativo (Jenkinsfile)
+
+Un pipeline declarativo es aquel que podemos crear, editar o configurar mediante una estructura definida que nos ayuda a entender y predecir los pasos del pipeline. Simplifica y da opciones a la sintaxis de los sub-sistemas de pipeline.
+Al igual que los descriptivos, los pipelines declarativos deben guardarse en un fichero Jenkinsfile para poder ser ejecutados luego por Jenkins.
 
 ## 10. Webgrafía
 
