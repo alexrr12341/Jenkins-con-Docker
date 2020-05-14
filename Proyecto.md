@@ -213,16 +213,16 @@ Al igual que los descriptivos, los pipelines declarativos deben guardarse en un 
 
 Su sintaxis sería la siguiente:
 
-   * Pipeline {} Identificamos dónde empieza y termina el pipeline así como los pasos que tiene.
+   * **Pipeline {}** Identificamos dónde empieza y termina el pipeline así como los pasos que tiene.
 
-   * Agent. Especificamos cuando se ejecuta el pipeline. Uno de los comandos más utilizados es any, para ejecutar el pipeline siempre y cuando haya un ejecutor libre en Jenkins.
+   * **Agent.** Especificamos cuando se ejecuta el pipeline. Uno de los comandos más utilizados es any, para ejecutar el pipeline siempre y cuando haya un ejecutor libre en Jenkins.
 
-   * Stages. Bloque donde se definen una serie de estados a realizar dentro del pipeline.
+   * **Stages.** Bloque donde se definen una serie de estados a realizar dentro del pipeline.
 
-   * Stage. Bloque que define una serie de tareas realizadas dentro del pipeline, por ejemplo: Build. test, deploy, etc. Podemos utilizar varios plugins en Jenkins para visualizar el estado o el progreso de estos estados.
-   * Steps. Son todos los pasos a realizar dentro de un stage. Podemos definir uno o varios pasos.
+   * **Stage.** Bloque que define una serie de tareas realizadas dentro del pipeline, por ejemplo: Build. test, deploy, etc. Podemos utilizar varios plugins en Jenkins para visualizar el estado o el progreso de estos estados.
+   * **Steps.** Son todos los pasos a realizar dentro de un stage. Podemos definir uno o varios pasos.
 
-   * Step. Es una tarea simple dentro del pipeline. Fundamentalmente es un paso donde se le dice a Jenkins qué hacer en un momento específico o paso del proceso. Por ejemplo, para ejecutar un comando en shell podemos tener un paso en el que tengamos la línea 'sh ls' para mostrar el listado de ficheros de una carpeta.
+   * **Step.** Es una tarea simple dentro del pipeline. Fundamentalmente es un paso donde se le dice a Jenkins qué hacer en un momento específico o paso del proceso. Por ejemplo, para ejecutar un comando en shell podemos tener un paso en el que tengamos la línea 'sh ls' para mostrar el listado de ficheros de una carpeta.
 
 
 
