@@ -18,7 +18,9 @@
    - [Docker](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#51-docker)
    - [Blue Ocean](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#52-blue-ocean)
    - [Prometheus](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#53-prometheus)
-6. [Métricas](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#6-metricas)
+6. [Métricas](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#6-métricas)
+7. [Pipelines](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#7-pipelines)
+   - [¿Qué es un Pipeline?]()
 10. [Webgrafía](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#10-webgraf%C3%ADa)
 ## 1. Introducción
 
@@ -168,7 +170,7 @@ Para instalar este plugin, debemos ir a Manage Jenkins -> Manage Plugins -> Avai
 Esto lo que hará es que Jenkins se pueda comunicar con prometheus para analizar las métricas.
 
 
-### 6. Métricas
+## 6. Métricas
 
 Para la configuración de métricas, ya que tenemos prometheus y grafana disponibles, debemos conectar prometheus con el nodo de jenkins, para ello indicamos en el /opt/prometheus.yml el nuevo job para que pueda comunicarse
 
@@ -195,6 +197,15 @@ En mi caso utilizaré la siguiente plantilla: https://grafana.com/grafana/dashbo
 
 ![](./jenkins1.png)
 
+## 7. Pipelines
+
+### 7.1. ¿Qué es un Pipeline?
+
+Un pipeline es una nueva forma de trabajar en el mundo devops en la integración continua. Utilizando pipeline y Jenkins, podemos definir el ciclo de vida completo de una aplicación (descargar código, compilar, test, desplegar, etc.) mediante código.
+
+De esta forma, resulta mucho más sencillo replicar los diferentes pasos con distintas aplicaciones y gestionar mejor los cambios en cada paso.
+
+
 ## 10. Webgrafía
 
 [Instalación de Jenkins](https://www.jenkins.io/doc/book/installing/)
@@ -202,3 +213,5 @@ En mi caso utilizaré la siguiente plantilla: https://grafana.com/grafana/dashbo
 [Monitorización de Jenkins](https://medium.com/@eng.mohamed.m.saeed/monitoring-jenkins-with-grafana-and-prometheus-a7e037cbb376)
 
 [Plugin de Docker](https://plugins.jenkins.io/docker-plugin/)
+
+
