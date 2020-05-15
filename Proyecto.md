@@ -239,9 +239,19 @@ Para la realización del entorno, utilizaremos este mismo repositorio de GitHub.
 Para ello realizamos los siguientes comandos en nuestro repositorio de github que hemos clonado en nuestro ordenador.
 
 ```
+alexrr@pc-alex:~/git/Jenkins-con-Docker$ git branch desarrollo
+alexrr@pc-alex:~/git/Jenkins-con-Docker$ git branch produccion
+alexrr@pc-alex:~/git/Jenkins-con-Docker$ git push -u origin desarrollo
+alexrr@pc-alex:~/git/Jenkins-con-Docker$ git push -u origin produccion
+```
+
+Entonces vamos a clonar el branch de desarrollo en la máquina desarrollo.
+```
+root@desarrollo:~# git clone --branch desarrollo https://github.com/alexrr12341/Jenkins-con-Docker
 
 ```
 
+Ahora podemos comenzar con el entorno de producción automatizado, dicho entorno tendrá un wordpress básico, y el de desarrollo tendrá un wordpress distinto, y podremos ver como se cambia automáticamente.
 
 ## 10. Webgrafía
 
