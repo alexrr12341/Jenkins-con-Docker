@@ -22,6 +22,7 @@
 7. [Pipelines](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#7-pipelines)
    - [¿Qué es un Pipeline?](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#71-qu%C3%A9-es-un-pipeline)
    - [Pipeline Declarativo (Jenkinsfile)](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#72-pipeline-declarativo-jenkinsfile)
+8. [Puesta en marcha]()
 10. [Webgrafía](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#10-webgraf%C3%ADa)
 ## 1. Introducción
 
@@ -224,6 +225,21 @@ Su sintaxis sería la siguiente:
 
    * **Step.** Es una tarea simple dentro del pipeline. Fundamentalmente es un paso donde se le dice a Jenkins qué hacer en un momento específico o paso del proceso. Por ejemplo, para ejecutar un comando en shell podemos tener un paso en el que tengamos la línea 'sh ls' para mostrar el listado de ficheros de una carpeta.
 
+
+## 8. Puesta en marcha
+
+### 8.1. Creación del entorno.
+
+Para la realización del entorno, utilizaremos este mismo repositorio de GitHub. En este repositorio vamos a crear dos ramas:
+
+* Desarrollo: Es la rama que contendrá el Jenkinsfile con los distintos tests
+* Producción: Es la rama que contendrá los cambios actuales de la página web.
+
+Para ello realizamos los siguientes comandos en nuestro repositorio de github que hemos clonado en nuestro ordenador.
+
+```
+
+```
 
 
 ## 10. Webgrafía
