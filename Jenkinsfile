@@ -43,6 +43,7 @@ pipeline {
     stage('Deploy') {
       steps {
 	withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'pass', usernameVariable: 'user')]) {
+		sh 'rm -r Jenkins-con-Docker'
 		sh 'git clone https://github.com/alexrr12341/Jenkins-con-Docker.git'
 		sh 'cd Jenkins-con-Docker && git checkout produccion'
 	}	
