@@ -47,7 +47,7 @@ pipeline {
 	withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'pass', usernameVariable: 'user')]) {
 		sh 'git remote update'
 		sh 'git fetch --all'
-		sh 'git checkout --track origin/produccion'
+		sh 'git checkout produccion'
 		sh 'git merge desarrollo'
 		sh 'git rm Jenkinsfile'
 		sh 'git push -f origin produccion'
