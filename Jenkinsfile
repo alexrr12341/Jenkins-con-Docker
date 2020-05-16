@@ -16,7 +16,7 @@ pipeline {
 	sh '''
             #!/bin/bash
             CPU=`grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage ""}'`
-	    if [ CPU -gt 90 ];
+	    if [ $CPU -gt 90 ];
 	    then
 		echo "Sobrepasa el uso de CPU!" > logfile.log
 		exit 125
