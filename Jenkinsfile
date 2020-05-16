@@ -3,10 +3,6 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-	sh 'rm -r Jenkins-con-Docker'
-	sh 'git clone https://github.com/alexrr12341/Jenkins-con-Docker'
-	sh 'cd Jenkins-con-Docker'
-	sh 'git checkout desarrollo'
         sh 'docker build -t pagina:test .'
       }
     }
@@ -56,3 +52,4 @@ pipeline {
     }
   }
 }
+
