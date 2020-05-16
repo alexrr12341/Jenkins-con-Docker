@@ -23,6 +23,19 @@ pipeline {
             else
                 echo "CPU correcta."
 	fi'''
+	sh label: '', script: '''#!/bin/bash
+	RamA=`free -m | grep \'Mem\' | awk {\'print $2\'}`
+	RamU=`free -m | grep \'Mem\' | awk {\'print $3\'}`
+	RamF=`echo "scale=1; $RamU / $RamA" | bc`
+	RamPorcentaje=`echo "scale=1; $RamF * 100" | bc`
+	max=\'90\'
+	if [[ $(echo "if (${RamPorcentaje} > ${max}) 1 else 0" | bc) -eq 1 ]];
+        then
+                echo "Sobrepasa el uso de RAM! Esta usando el $RamPorcentaje por ciento"
+                exit 1
+        else
+                echo "RAM correcta."
+	fi'''
         sh 'docker stop appjenkins'
       }
     }
