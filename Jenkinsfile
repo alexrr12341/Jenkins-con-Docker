@@ -8,6 +8,7 @@ pipeline {
         sh 'docker build -t pagina:test .'
       }
     }
+
     stage('Test') {
       steps {
         echo 'Testing...'
@@ -38,6 +39,14 @@ pipeline {
 	fi'''
 	sh 'ab -t 10 -c 200 http://localhost/index.php | grep Requests'
         sh 'docker stop appjenkins'
+      }
+    }
+
+    stage('Deploy') {
+      steps {
+	withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'pass', usernameVariable: 'user')]) {
+		sh 'git clone --branch produccion https://github.com/alexrr12341/Jenkins-con-Docker'
+	}	
       }
     }
   }
