@@ -15,11 +15,15 @@ pipeline {
         sh '/bin/nc -vz localhost 80'
 	sh '''
             #!/bin/bash
-            echo "hello world"
+            CPU=`grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage ""}'`
+	    if [ CPU -gt 90 ];
+	    then
+		echo "Sobrepasa el uso de CPU!" > logfile.log
+		exit 125
+	    fi
          '''
         sh 'docker stop appjenkins'
       }
     }
   }
 }
-
