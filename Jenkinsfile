@@ -45,7 +45,7 @@ pipeline {
 	withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'pass', usernameVariable: 'user')]) {
 		sh 'rm -r Jenkins-con-Docker'
 		sh 'git clone https://github.com/alexrr12341/Jenkins-con-Docker.git'
-		sh 'cd Jenkins-con-Docker && git checkout produccion'
+		sh 'cd Jenkins-con-Docker && git checkout produccion && git merge desarrollo && git rm Jenkinsfile && git push -u origin produccion'
 	}	
       }
     }
