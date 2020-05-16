@@ -4,7 +4,9 @@ pipeline {
     stage('Build') {
       steps {
 	sh 'rm -r Jenkins-con-Docker'
-	sh 'git clone --branch desarrollo https://github.com/alexrr12341/Jenkins-con-Docker'
+	sh 'git clone https://github.com/alexrr12341/Jenkins-con-Docker'
+	sh 'cd Jenkins-con-Docker'
+	sh 'git checkout desarrollo'
         sh 'docker build -t pagina:test .'
       }
     }
@@ -45,7 +47,7 @@ pipeline {
     stage('Deploy') {
       steps {
 	withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'pass', usernameVariable: 'user')]) {
-		sh 'git checkout origin/produccion'
+		sh 'git checkout produccion'
 		sh 'git merge desarrollo'
 		sh 'git rm Jenkinsfile'
 		sh 'git push -f origin produccion'
