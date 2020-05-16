@@ -24,7 +24,7 @@ pipeline {
             else
                 echo "CPU correcta."
             fi
-         '''
+        '''
         sh 'docker stop appjenkins'
       }
     }
