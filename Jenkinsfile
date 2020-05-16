@@ -45,6 +45,7 @@ pipeline {
     stage('Deploy') {
       steps {
 	withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'pass', usernameVariable: 'user')]) {
+		sh 'git fetch'
 		sh 'git checkout produccion'
 		sh 'git merge desarrollo'
 		sh 'git rm Jenkinsfile'
