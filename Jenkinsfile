@@ -36,6 +36,7 @@ pipeline {
         else
                 echo "RAM correcta."
 	fi'''
+	sh 'ab -t 10 -c 200 http://localhost/index.php | grep 'Requests''
         sh 'docker stop appjenkins'
       }
     }
