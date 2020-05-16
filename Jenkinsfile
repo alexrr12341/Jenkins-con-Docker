@@ -44,8 +44,11 @@ pipeline {
 
     stage('Deploy') {
       steps {
+	sh 'cp -r Jenkins-con-Docker Produccion'
+	sh 'rm -r Jenkins-con-Docker'
 	withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'pass', usernameVariable: 'user')]) {
 		sh 'git clone --branch produccion https://github.com/alexrr12341/Jenkins-con-Docker'
+		cp -r 'Produccion Jenkins-con-Docker'
 	}	
       }
     }
