@@ -46,7 +46,7 @@ pipeline {
       steps {
 	withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'pass', usernameVariable: 'user')]) {
 		sh 'git remote update'
-		sh 'git fetch'
+		sh 'git fetch --all'
 		sh 'git checkout --track origin/produccion'
 		sh 'git merge desarrollo'
 		sh 'git rm Jenkinsfile'
