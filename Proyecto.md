@@ -87,6 +87,8 @@ Teniendo dicha imagen, vamos ahora a lanzar el contenedor con el siguiente coman
 docker run -d --name jenkins --network jenkins -p 8080:8080 -p 50000:50000 -v /opt/jenkins_home:/var/jenkins_home jenkins/jenkins
 ```
 
+docker run -d --name jenkins --network jenkins -p 8080:8080 -p 50000:50000 -v /opt/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock alexrr12341/myjenkins:v1
+
 Nos saltará el siguiente error a la hora de hacer el volumen persistente, ya que no tiene los permisos del usuario de jenkins
 ```
 Can not write to /var/jenkins_home/copy_reference_file.log. Wrong volume permissions?
@@ -102,7 +104,7 @@ chown -R 1000 /opt/jenkins_home
 Y volvemos a ejecutar el comando:
 
 ```
-docker run --name jenkins -p 8080:8080 -p 50000:50000 -v /opt/jenkins_home:/var/jenkins_home jenkins
+docker run -d --name jenkins --network jenkins -p 8080:8080 -p 50000:50000 -v /opt/jenkins_home:/var/jenkins_home jenkins/jenkins
 ```
 
 Vemos que la imagen está funcionando:
@@ -152,12 +154,7 @@ docker run -d --name grafana --network jenkins -p 3000:3000 grafana/grafana
 Para la instalación de este plugin es muy sencilla, debemos ir a Manage Jenkins -> Manage Plugins -> Available, Buscamos docker en el buscador y le damos el tick al que pone Docker y la opción de 'Download now and install after restart'.
 Este plugin lo que hará es que podramos integrar los comandos de docker en nuestros pipelines de Jenkins.
 
-Para poder acceder al cloud de docker, debemos en nuestra configuración de docker, añadir la siguiente línea (/etc/default/docker):
-```
-DOCKER_OPTS="-H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock"
-```
-
-Y en Configure Clouds de jenkins añadimos la ip de la máquina, en este caso tcp://172.17.0.1:2376
+Para conseguir que funcione, en este caso pondremos en Configure Cloud: unix:///var/run/docker.soc
 
 
 ### 5.2. Blue Ocean
@@ -181,7 +178,7 @@ Para la configuración de métricas, ya que tenemos prometheus y grafana disponi
 - job_name: 'jenkins'
   metrics_path: /prometheus
   static_configs:
-    - targets: ['jenkins:8080']
+    - targets: ['172.17.0.1:8080']
 ```
 
 Para comprobar que va correctamente, simplemente entramos a http://jenkins:9090 y miramos que al lado del botón de Execute tenemos varios jenkins_*
@@ -229,7 +226,7 @@ Su sintaxis sería la siguiente:
 
 ## 8. Puesta en marcha
 
-### 8.1. Creación del entorno.
+### 8.1. Creación del entorno git.
 
 Para la realización del entorno, utilizaremos este mismo repositorio de GitHub. En este repositorio vamos a crear dos ramas:
 
@@ -248,10 +245,64 @@ alexrr@pc-alex:~/git/Jenkins-con-Docker$ git push -u origin produccion
 Entonces vamos a clonar el branch de desarrollo en la máquina desarrollo.
 ```
 root@desarrollo:~# git clone --branch desarrollo https://github.com/alexrr12341/Jenkins-con-Docker
+```
+
+
+### 8.2. Creación de Jenkinsfile y Dockerfile
+
+Ahora podemos comenzar con el entorno de producción automatizado, dicho entorno tendrá un wordpress básico, y el de desarrollo tendrá un wordpress distinto, y podremos ver como se cambia automáticamente.
+
+
+Tendremos un Dockerfile para la creación de la imágen wordpress que sería el siguiente:
+
+```
+FROM php:apache-buster
+RUN docker-php-ext-install pdo pdo_mysql mysqli json
+RUN a2enmod rewrite
+EXPOSE 80
+WORKDIR /var/www/html
+COPY ./wordpress /var/www/html
+ENTRYPOINT ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+```
+
+Ejecutaremos antes una base de datos para que funcione wordpress en el entorno de produccion:
+
+```
+docker run -d --name mariadb --network jenkins -v /opt/bbdd_mariadb:/var/lib/mysql -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=wordpress -e MYSQL_ROOT_PASSWORD=asdasd mariadb
+```
+
+También tendremos el Jenkinsfile, que será el siguiente:
+
+```
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+	sh 'git clone --branch desarrollo https://github.com/alexrr12341/Jenkins-con-Docker'
+        sh 'docker build -t pagina:test .'
+      }
+    }
+    stage('Test') {
+      steps {
+        echo 'Testing...'
+        sh 'docker run --rm --name appjenkins -d -p 80:80 pagina:test'
+        sh '/bin/nc -vz localhost 80'
+	sh '''
+            #!/bin/bash
+            echo "hello world"
+         '''
+        sh 'docker stop appjenkins'
+      }
+    }
+  }
+}
 
 ```
 
-Ahora podemos comenzar con el entorno de producción automatizado, dicho entorno tendrá un wordpress básico, y el de desarrollo tendrá un wordpress distinto, y podremos ver como se cambia automáticamente.
+### 8.2. Creación del Jenkinsfile
+
+Ahora vamos a realizar la creación del Jenkinsfile que estará en la rama desarrollo, dicho jenkins analizará si dispone de suficientes recursos para lanzar la nueva imagen docker, si están funcionando correctamente los servidores de mysql y apache y si la página responde las peticiones.
 
 ## 10. Webgrafía
 
