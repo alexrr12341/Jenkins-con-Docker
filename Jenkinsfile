@@ -40,13 +40,17 @@ pipeline {
       }
     }
 
-    stage('Deploy') {
+    stage('Push') {
       steps {
 	withCredentials([usernamePassword(credentialsId: 'github-credentials', passwordVariable: 'GITHUB_PASS', usernameVariable: 'GITHUB_USER')]) {
 		sh 'rm -r Jenkins-con-Docker'
 		sh 'git clone --branch produccion https://github.com/alexrr12341/Jenkins-con-Docker.git'
-		sh 'cp -r Dockerfile wordpress Jenkins-con-Docker && cd Jenkins-con-Docker && git add * && git commit -m "Jenkins Automatico" && git push https://${GITHUB_USER}:${GITHUB_PASS}@github.com/alexrr12341/Jenkins-con-Docker.git'
-	}	
+		sh 'rm -r Jenkins-con-Docker/wordpress && cp -r Dockerfile wordpress Jenkins-con-Docker && cd Jenkins-con-Docker && git add * && git commit -m "Jenkins Automatico" && git push https://${GITHUB_USER}:${GITHUB_PASS}@github.com/alexrr12341/Jenkins-con-Docker.git'
+	}
+	withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'password', usernameVariable: 'user')]) {
+		sh 'docker tag pagina:test alexrr12341/pagina:stable'
+		sh 'docker push alexrr12341/pagina:stable'
+	}
       }
     }
   }
