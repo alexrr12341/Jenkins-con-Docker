@@ -53,5 +53,11 @@ pipeline {
 	}
       }
     }
+
+    stage('Deploy') {
+      steps {
+	sh 'echo prueba'
+      }
+    }
   }
 }
