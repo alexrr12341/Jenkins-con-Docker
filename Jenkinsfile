@@ -48,9 +48,11 @@ pipeline {
 		sh 'rm -r Jenkins-con-Docker/wordpress && cp -r Dockerfile wordpress Jenkins-con-Docker && cd Jenkins-con-Docker && git add * && git commit -m "Jenkins Automatico" && git push https://${GITHUB_USER}:${GITHUB_PASS}@github.com/alexrr12341/Jenkins-con-Docker.git'
 	}
 	withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'password', usernameVariable: 'user')]) {
-		sh 'docker login -u $(user) -p $(password)'
-		sh 'docker tag pagina:test alexrr12341/pagina:stable'
-		sh 'docker push alexrr12341/pagina:stable'
+		docker.withRegistry('', 'dockerhub') {
+			sh 'docker login -u $(user) -p $(password)'
+			sh 'docker tag pagina:test alexrr12341/pagina:stable'
+			sh 'docker push alexrr12341/pagina:stable'
+		}
 	}
       }
     }
