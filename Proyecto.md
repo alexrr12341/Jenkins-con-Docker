@@ -25,8 +25,8 @@
 8. [Puesta en marcha](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#8-puesta-en-marcha)
    - [Creacion del entorno](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#81-creaci%C3%B3n-del-entorno)
    - [Creación de Jenkinsfile y Dockerfile](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#82-creaci%C3%B3n-de-jenkinsfile-y-dockerfile)
-9. [Conclusión]()
-10. [Pro]
+9. [Conclusión](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#9-conclusi%C3%B3n)
+10. [Siguientes pasos](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#10-siguientes-pasos)
 11. [Webgrafía](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#10-webgraf%C3%ADa)
 ## 1. Introducción
 
@@ -373,7 +373,7 @@ También hemos aprendido un poco más sobre la integración continua y hemos rea
 
 ## 10. Siguientes pasos
 
-Debemos aprender más sobre Jenkins, todas las funciones que se pueden realizar en un pipeline y estudiar los plugins, que también se pueden realizar sobre kubernetes
+Debemos aprender más sobre Jenkins, todas las funciones que se pueden realizar en un pipeline y estudiar los plugins, que también se pueden realizar sobre kubernetes.
 
 ## 11. Webgrafía
 
