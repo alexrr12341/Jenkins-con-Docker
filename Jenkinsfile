@@ -10,6 +10,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Testing...'
+	sh 'docker stop wordjenkins'
         sh 'docker run --rm --name appjenkins -d -p 80:80 pagina:test'
         sh '/bin/nc -vz localhost 80'
 	sh label: '', script: '''#!/bin/bash
@@ -57,7 +58,6 @@ pipeline {
     stage('Deploy') {
       steps {
 	sh 'docker pull alexrr12341/pagina:stable'
-	sh 'docker stop wordjenkins'
 	sh 'docker run --rm --name wordjenkins --network jenkins -d -p 80:80 alexrr12341/pagina:stable'
       }
     }
