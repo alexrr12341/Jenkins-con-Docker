@@ -154,7 +154,10 @@ docker run -d --name grafana --network jenkins -p 3000:3000 grafana/grafana
 Para la instalación de este plugin es muy sencilla, debemos ir a Manage Jenkins -> Manage Plugins -> Available, Buscamos docker en el buscador y le damos el tick al que pone Docker y la opción de 'Download now and install after restart'.
 Este plugin lo que hará es que podramos integrar los comandos de docker en nuestros pipelines de Jenkins.
 
-Para conseguir que funcione, en este caso pondremos en Configure Cloud: unix:///var/run/docker.soc
+
+Para conseguir que funcione, en este caso pondremos en Configure Cloud: unix:///var/run/docker.sock
+
+También haremos lo mismo con el plugin CloudBees Docker Hub/Registry Notification que nos permitirá subir las imágenes a DockerHub.
 
 
 ### 5.2. Blue Ocean
@@ -279,8 +282,6 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-	sh 'rm -r Jenkins-con-Docker'
-	sh 'git clone --branch desarrollo https://github.com/alexrr12341/Jenkins-con-Docker'
         sh 'docker build -t pagina:test .'
       }
     }
@@ -288,9 +289,10 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Testing...'
-        sh 'docker run --rm --name appjenkins -d -p 80:80 pagina:test'
+	sh 'docker stop wordjenkins'
+        sh 'docker run --rm --name appjenkins --network jenkins -d -p 80:80 pagina:test'
         sh '/bin/nc -vz localhost 80'
-	sh label: '', script: '''#!/bin/bash
+	sh label: '', script: '''#!/bin/bash	
             CPU=`top -bn1 | grep "Cpu(s)" | sed "s/.*, *\\([0-9.]*\\)%* id.*/\\1/" | awk \'{print 100 - $1""}\'`
             max=\'90\'
             if [[ $(echo "if (${CPU} > ${max}) 1 else 0" | bc) -eq 1 ]];
@@ -318,21 +320,49 @@ pipeline {
       }
     }
 
+    stage('Push') {
+      steps {
+	withCredentials([usernamePassword(credentialsId: 'github-credentials', passwordVariable: 'GITHUB_PASS', usernameVariable: 'GITHUB_USER')]) {
+		sh 'rm -r Jenkins-con-Docker'
+		sh 'git clone --branch produccion https://github.com/alexrr12341/Jenkins-con-Docker.git'
+		sh 'rm -r Jenkins-con-Docker/wordpress && cp -r Dockerfile wordpress Jenkins-con-Docker && cd Jenkins-con-Docker && git add * && git commit -m "Jenkins Automatico" && git push https://${GITHUB_USER}:${GITHUB_PASS}@github.com/alexrr12341/Jenkins-con-Docker.git'
+	}
+        withDockerRegistry([ credentialsId: "dockerhub", url: "" ]) {
+		sh 'docker tag pagina:test alexrr12341/pagina:stable'
+		sh 'docker push alexrr12341/pagina:stable'
+	}
+      }
+    }
+
     stage('Deploy') {
       steps {
-	sh 'rm -r Jenkins-con-Docker'
-	sh 'git clone --branch desarrollo https://github.com/alexrr12341/Jenkins-con-Docker'
-        sh 'docker build -t pagina:test .'
+	sh 'docker pull alexrr12341/pagina:stable'
+	sh 'docker run --rm --name wordjenkins --network jenkins -d -p 80:80 alexrr12341/pagina:stable'
       }
     }
   }
 }
-
 ```
 
-### 8.2. Creación del Jenkinsfile
+Vamos a explicar paso a paso lo que hace este Jenkinsfile.
 
-Ahora vamos a realizar la creación del Jenkinsfile que estará en la rama desarrollo, dicho jenkins analizará si dispone de suficientes recursos para lanzar la nueva imagen docker, si están funcionando correctamente los servidores de mysql y apache y si la página responde las peticiones.
+* Fase Build
+
+En esta fase haremos el build de la imagen docker que los desarrolladores hayan cambiado.
+
+* Fase Test
+
+En esta fase, la página sera desactivada por unos segundos, correremos la nueva página y le haremos unos test para que no sobrepasen la CPU y la RAM en un 90% , miraremos que el puerto 80 esté activo y haremos un mini test de rendimiento. Si supera estos test el contenedor se desactivará
+
+* Fase Push
+
+Si pasan todos los tests, el wordpress y el dockerfile pasarán a estar en el branch 'produccion' de nuestro GitHub automáticamente y subiremos la imagen a DockerHub.
+
+* Fase Deploy
+
+Acto seguido, la página será subida a producción y podrá ser accedida con los nuevos plugins, temas ya instalados.
+
+
 
 ## 10. Webgrafía
 
