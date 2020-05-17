@@ -1,0 +1,36 @@
+# Translation of Themes - Lyrical in Spanish (Spain)
+# This file is distributed under the same license as the Themes - Lyrical package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-07-12 06:13:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Themes - Lyrical\n"
+
+#. Theme Name of the theme
+msgid "Lyrical"
+msgstr "Lyrical"
+
+#. Description of the theme
+msgid "Lyrical is a Primer child theme with a focus on photography and beautiful fonts."
+msgstr "Lyrica es un tema hijo de Primer enfocado en la fotografía y con bonitas fuentes."
+
+#: functions.php:164
+msgid "Dropdown Background"
+msgstr "Fondo del desplegable"
+
+#. Author URI of the theme
+msgid "https://www.godaddy.com/"
+msgstr "https://www.godaddy.com/"
+
+#. Author of the theme
+msgid "GoDaddy"
+msgstr "GoDaddy"
+
+#. Theme URI of the theme
+msgid "https://github.com/godaddy/wp-lyrical-theme"
+msgstr "https://github.com/godaddy/wp-lyrical-theme"
