@@ -1,0 +1,1600 @@
+# Copyright (C) 2020 ThemeGrill
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: eStore 1.4.7\n"
+"Report-Msgid-Bugs-To: themegrill@gmail.com\n"
+"POT-Creation-Date: 2020-04-18 03:11:43+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ThemeGrill <themegrill@gmail.com>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+
+#: 404.php:20 404.php:33
+msgid "404"
+msgstr ""
+
+#: 404.php:35
+msgid "error"
+msgstr ""
+
+#: 404.php:38 functions.php:291
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:41
+msgid "It looks like nothing was found at this location. Try the search below."
+msgstr ""
+
+#: comments.php:42 comments.php:63
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:45 comments.php:66
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:46 comments.php:67
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:79
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:18
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: footer.php:20
+msgid "Proudly powered by %s."
+msgstr ""
+
+#: functions.php:97
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:98
+msgid "Header Top Bar Menu"
+msgstr ""
+
+#: functions.php:99
+msgid "Secondary Menu"
+msgstr ""
+
+#: header.php:42
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:81 header.php:82 header.php:221
+msgid "My Account"
+msgstr ""
+
+#: header.php:85
+msgid "Login/Register"
+msgstr ""
+
+#: header.php:86
+msgid "Login/ Register"
+msgstr ""
+
+#: header.php:174 inc/woocommerce.php:511 woocommerce/cart/cart-totals.php:99
+#: woocommerce/cart/cart-totals.php:100
+msgid "Total"
+msgstr ""
+
+#: header.php:225
+msgid "Login / Register"
+msgstr ""
+
+#: inc/admin/class-estore-admin.php:41
+msgid "Activating "
+msgstr ""
+
+#: inc/admin/class-estore-admin.php:46
+msgid "Processing..."
+msgstr ""
+
+#: inc/admin/class-estore-admin.php:135
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+
+#: inc/admin/class-estore-admin.php:139
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: inc/admin/class-estore-admin.php:161
+msgid "Dismiss"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "eStore"
+msgstr ""
+
+#: inc/admin/class-estore-admin.php:171
+msgid ""
+"Welcome! Thank you for choosing eStore! To fully take advantage of the best "
+"our theme can offer please make sure you visit our %swelcome page%s."
+msgstr ""
+
+#: inc/admin/class-estore-admin.php:173
+msgid ""
+"Clicking the button below will install and activate the ThemeGrill demo "
+"importer plugin."
+msgstr ""
+
+#: inc/admin/class-estore-admin.php:177
+msgid "Get started with eStore"
+msgstr ""
+
+#: inc/admin/class-estore-dashboard.php:51
+#. translators: %s: Theme Name.
+msgid "%s Options"
+msgstr ""
+
+#: inc/admin/class-estore-dashboard.php:78
+#. translators: %s: Theme version.
+msgid "eStore %s"
+msgstr ""
+
+#: inc/admin/class-estore-dashboard.php:84
+msgid "Welcome to eStore!"
+msgstr ""
+
+#: inc/admin/class-estore-dashboard.php:88
+#. translators: %s: Theme Name.
+msgid "Important links to get you started with %s"
+msgstr ""
+
+#: inc/admin/class-estore-dashboard.php:94
+msgid "Get Started"
+msgstr ""
+
+#: inc/admin/class-estore-dashboard.php:97
+msgid "Learn Basics"
+msgstr ""
+
+#: inc/admin/class-estore-dashboard.php:102
+msgid "Next Steps"
+msgstr ""
+
+#: inc/admin/class-estore-dashboard.php:104
+msgid "Documentation"
+msgstr ""
+
+#: inc/admin/class-estore-dashboard.php:105
+msgid "Starter Demos"
+msgstr ""
+
+#: inc/admin/class-estore-dashboard.php:106
+msgid "Premium Version"
+msgstr ""
+
+#: inc/admin/class-estore-dashboard.php:111
+msgid "Further Actions"
+msgstr ""
+
+#: inc/admin/class-estore-dashboard.php:113
+#: inc/admin/class-estore-theme-review-notice.php:105
+msgid "Got theme support question?"
+msgstr ""
+
+#: inc/admin/class-estore-dashboard.php:114
+msgid "Leave a review"
+msgstr ""
+
+#: inc/admin/class-estore-theme-review-notice.php:78
+#. Translators: %1$s current user display name.
+msgid ""
+"Howdy, %1$s! It seems that you have been using this theme for more than 15 "
+"days. We hope you are happy with everything that the theme has to offer. If "
+"you can spare a minute, please help us by leaving a 5-star review on "
+"WordPress.org.  By spreading the love, we can continue to develop new "
+"amazing features in the future, for free!"
+msgstr ""
+
+#: inc/admin/class-estore-theme-review-notice.php:89
+msgid "Sure"
+msgstr ""
+
+#: inc/admin/class-estore-theme-review-notice.php:94
+msgid "Maybe later"
+msgstr ""
+
+#: inc/admin/class-estore-theme-review-notice.php:99
+msgid "I already did"
+msgstr ""
+
+#: inc/admin/meta-boxes.php:15
+msgid "Select Layout"
+msgstr ""
+
+#: inc/admin/meta-boxes.php:29 inc/customizer.php:396
+msgid "Default Layout"
+msgstr ""
+
+#: inc/admin/meta-boxes.php:34 inc/widgets.php:20
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/admin/meta-boxes.php:39 inc/widgets.php:30
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/admin/meta-boxes.php:44
+msgid "No Sidebar Full Width"
+msgstr ""
+
+#: inc/admin/meta-boxes.php:49
+msgid "No Sidebar Content Centered"
+msgstr ""
+
+#: inc/admin/tdi-notice.php:40
+#. Translators: 1: Notice text 2: Plugin Name 3. CTA
+msgid ""
+"%1$s: Please update \"%2$s\" plugin to latest version to make sure your "
+"site is all secure. We released a security patch in the latest version of "
+"this plugin. %3$s"
+msgstr ""
+
+#: inc/admin/tdi-notice.php:41
+msgid "Action Required"
+msgstr ""
+
+#: inc/admin/tdi-notice.php:42 inc/admin/tdi-notice.php:54
+msgid "ThemeGrill Demo Importer"
+msgstr ""
+
+#: inc/admin/tdi-notice.php:47
+#. Translators: 1: CTA link 2: CTA text
+msgid "Update Now"
+msgstr ""
+
+#: inc/admin/tdi-notice.php:53
+#. Translators: 1: Plugin name
+msgid ""
+"Also, if the purpose of importing the demo via \"%1$s\" plugin is "
+"fulfilled, you can simply delete this plugin now."
+msgstr ""
+
+#: inc/customizer.php:94
+msgid "View PRO version"
+msgstr ""
+
+#: inc/customizer.php:115
+msgid "Choose the required option for Header Media placement"
+msgstr ""
+
+#: inc/customizer.php:119
+msgid "Position One: Display Header Media just above the site Title/Text"
+msgstr ""
+
+#: inc/customizer.php:120
+msgid "Postion Two: Display Header Media just below the Main/Primary Menu"
+msgstr ""
+
+#: inc/customizer.php:132
+msgid "Change Header Settings here"
+msgstr ""
+
+#: inc/customizer.php:134
+msgid "Header Options"
+msgstr ""
+
+#: inc/customizer.php:143
+msgid "Header Integrations"
+msgstr ""
+
+#: inc/customizer.php:161
+msgid "Enable Language Selection (WPML)"
+msgstr ""
+
+#: inc/customizer.php:174
+msgid "Header Logo"
+msgstr ""
+
+#: inc/customizer.php:192
+msgid "Choose the required option"
+msgstr ""
+
+#: inc/customizer.php:196
+msgid "Header Logo Only"
+msgstr ""
+
+#: inc/customizer.php:197
+msgid "Header Text Only"
+msgstr ""
+
+#: inc/customizer.php:198
+msgid "Show both header logo and text"
+msgstr ""
+
+#: inc/customizer.php:199
+msgid "Disable"
+msgstr ""
+
+#: inc/customizer.php:219
+msgid "Different Logo for Retina Devices?"
+msgstr ""
+
+#: inc/customizer.php:239
+msgid "Retina Logo"
+msgstr ""
+
+#: inc/customizer.php:240
+msgid ""
+"Please upload the retina logo double the size of default logo. For eg: If "
+"you upload 100 * 100px for default logo then use 200 * 200px for retina "
+"logo."
+msgstr ""
+
+#: inc/customizer.php:254
+msgid "Header Top Bar"
+msgstr ""
+
+#: inc/customizer.php:272
+msgid "Activate the header top bar"
+msgstr ""
+
+#: inc/customizer.php:294
+msgid "Header Text"
+msgstr ""
+
+#: inc/customizer.php:295
+msgid "Paste the Font Awesome icon font"
+msgstr ""
+
+#: inc/customizer.php:318
+msgid "Header Search"
+msgstr ""
+
+#: inc/customizer.php:335
+msgid "Choose a search option"
+msgstr ""
+
+#: inc/customizer.php:339
+msgid "WordPress search"
+msgstr ""
+
+#: inc/customizer.php:340
+msgid "WooCommerce search"
+msgstr ""
+
+#: inc/customizer.php:353
+msgid "Design Related Settings"
+msgstr ""
+
+#: inc/customizer.php:355
+msgid "Design Options"
+msgstr ""
+
+#: inc/customizer.php:364
+msgid "Primary Color Option"
+msgstr ""
+
+#: inc/customizer.php:385
+msgid ""
+"This will reflect in links, buttons and many others. Choose a color to "
+"match your site"
+msgstr ""
+
+#: inc/customizer.php:415
+msgid ""
+"Select default layout. This layout will be reflected in whole site "
+"archives, categories, search page etc. The layout for a single post and "
+"page can be controlled from below options"
+msgstr ""
+
+#: inc/customizer.php:433
+msgid "Default Page Layout"
+msgstr ""
+
+#: inc/customizer.php:452
+msgid ""
+"Select default layout for pages. This layout will be reflected in all pages "
+"unless unique layout is set for specific page"
+msgstr ""
+
+#: inc/customizer.php:470
+msgid "Default Single Post Layout"
+msgstr ""
+
+#: inc/customizer.php:489
+msgid ""
+"Select default layout for single posts. This layout will be reflected in "
+"all single posts unless unique layout is set for specific post"
+msgstr ""
+
+#: inc/customizer.php:507
+msgid "Blog Layout"
+msgstr ""
+
+#: inc/customizer.php:524
+msgid "Choose the layout style for archive pages."
+msgstr ""
+
+#: inc/customizer.php:528
+msgid "List View"
+msgstr ""
+
+#: inc/customizer.php:529
+msgid "Grid View"
+msgstr ""
+
+#: inc/customizer.php:540
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customizer.php:560
+msgid "Write your Custom CSS here"
+msgstr ""
+
+#: inc/customizer.php:572
+msgid "Footer Widgets"
+msgstr ""
+
+#: inc/customizer.php:589
+msgid "Choose the number of widget area you want in footer"
+msgstr ""
+
+#: inc/customizer.php:593
+msgid "1 Footer Widget Area"
+msgstr ""
+
+#: inc/customizer.php:594
+msgid "2 Footer Widget Area"
+msgstr ""
+
+#: inc/customizer.php:595
+msgid "3 Footer Widget Area"
+msgstr ""
+
+#: inc/customizer.php:596
+msgid "4 Footer Widget Area"
+msgstr ""
+
+#: inc/customizer.php:608
+msgid "Some additional settings."
+msgstr ""
+
+#: inc/customizer.php:610
+msgid "Additional Options"
+msgstr ""
+
+#: inc/customizer.php:619
+msgid "Author Bio Option"
+msgstr ""
+
+#: inc/customizer.php:637
+msgid "Check to display the author bio."
+msgstr ""
+
+#: inc/customizer.php:648
+msgid "Related Posts"
+msgstr ""
+
+#: inc/customizer.php:666
+msgid "Check to activate the related posts"
+msgstr ""
+
+#: inc/customizer.php:685
+msgid "Related Posts Must Be Shown As:"
+msgstr ""
+
+#: inc/customizer.php:689
+msgid "Related Posts By Categories"
+msgstr ""
+
+#: inc/customizer.php:690
+msgid "Related Posts By Tags"
+msgstr ""
+
+#: inc/customizer.php:700 inc/woocommerce.php:122
+msgid "Category Color Settings"
+msgstr ""
+
+#: inc/customizer.php:726 inc/woocommerce.php:145
+msgid " %s"
+msgstr ""
+
+#: inc/customizer.php:741
+msgid "Post Meta Settings"
+msgstr ""
+
+#: inc/customizer.php:743
+msgid "Note: This will only work in single posts."
+msgstr ""
+
+#: inc/customizer.php:760
+msgid "Hide all post meta data under post title."
+msgstr ""
+
+#: inc/customizer.php:780
+msgid "Hide date under post title."
+msgstr ""
+
+#: inc/customizer.php:800
+msgid "Hide author under post title."
+msgstr ""
+
+#: inc/customizer.php:820
+msgid "Hide comment count under post title."
+msgstr ""
+
+#: inc/customizer.php:840
+msgid "Hide category under post title."
+msgstr ""
+
+#: inc/customizer.php:860
+msgid "Hide tags under post title."
+msgstr ""
+
+#: inc/customizer.php:872
+msgid "Payment Partners Logo"
+msgstr ""
+
+#: inc/customizer.php:894
+msgid "Upload logo"
+msgstr ""
+
+#: inc/demo-config.php:28
+msgid "eStore Pro Default"
+msgstr ""
+
+#: inc/demo-config.php:33
+msgid "eStore Pro Fashion"
+msgstr ""
+
+#: inc/demo-config.php:38
+msgid "eStore Pro Tech"
+msgstr ""
+
+#: inc/estore.php:27 inc/related-posts.php:43
+#: inc/widgets/class-estore-featured-posts-widget.php:141
+#: inc/widgets/class-estore-posts-grid.php:227
+msgid "0 Comment"
+msgstr ""
+
+#: inc/estore.php:28 inc/related-posts.php:43
+#: inc/widgets/class-estore-featured-posts-widget.php:141
+#: inc/widgets/class-estore-posts-grid.php:227
+msgid "1 Comment"
+msgstr ""
+
+#: inc/estore.php:28 inc/related-posts.php:43
+#: inc/widgets/class-estore-featured-posts-widget.php:141
+#: inc/widgets/class-estore-posts-grid.php:227
+msgid " % Comments"
+msgstr ""
+
+#: inc/estore.php:87
+msgid "Home"
+msgstr ""
+
+#: inc/estore.php:88
+msgid "Archive by Category \"%s\""
+msgstr ""
+
+#: inc/estore.php:89
+msgid "Archive for \"%s\""
+msgstr ""
+
+#: inc/estore.php:90
+msgid "Search Results for \"%s\" query"
+msgstr ""
+
+#: inc/estore.php:91
+msgid "Posts Tagged \"%s\""
+msgstr ""
+
+#: inc/estore.php:92
+msgid "Articles Posted by %s"
+msgstr ""
+
+#: inc/estore.php:93
+msgid "Error 404"
+msgstr ""
+
+#: inc/estore.php:207 inc/widgets/class-estore-about.php:32
+msgid "Page"
+msgstr ""
+
+#: inc/functions.php:43
+msgid "Search for:"
+msgstr ""
+
+#: inc/functions.php:44
+msgid "Search products ..."
+msgstr ""
+
+#: inc/related-posts.php:8
+msgid "You May Also Like"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:327
+#: inc/tgm-plugin-activation/tgmpa-estore.php:40
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:328
+#: inc/tgm-plugin-activation/tgmpa-estore.php:41
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:330
+#: inc/tgm-plugin-activation/tgmpa-estore.php:43
+#. translators: %s: plugin name.
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:332
+#: inc/tgm-plugin-activation/tgmpa-estore.php:45
+#. translators: %s: plugin name.
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:333
+#: inc/tgm-plugin-activation/tgmpa-estore.php:46
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:370
+#: inc/tgm-plugin-activation/tgmpa-estore.php:83
+#. translators: 1: plugin name(s).
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:375
+#: inc/tgm-plugin-activation/tgmpa-estore.php:88
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:380
+#: inc/tgm-plugin-activation/tgmpa-estore.php:93
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:385
+#: inc/tgm-plugin-activation/tgmpa-estore.php:98
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:386
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:827
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2533
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:387
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3159
+#: inc/tgm-plugin-activation/tgmpa-estore.php:99
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:388
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2952
+#: inc/tgm-plugin-activation/tgmpa-estore.php:100
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:390
+#: inc/tgm-plugin-activation/tgmpa-estore.php:102
+#. translators: 1: plugin name.
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:392
+#: inc/tgm-plugin-activation/tgmpa-estore.php:104
+#. translators: 1: plugin name.
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:394
+#: inc/tgm-plugin-activation/tgmpa-estore.php:106
+#. translators: 1: dashboard link.
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:395
+#: inc/tgm-plugin-activation/tgmpa-estore.php:107
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:396
+#: inc/tgm-plugin-activation/tgmpa-estore.php:108
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:397
+#: inc/tgm-plugin-activation/tgmpa-estore.php:109
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:934
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:1982
+#. translators: %s: version number
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2392
+#. translators: 1: number of plugins.
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2396
+#. translators: 1: number of plugins.
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2400
+#. translators: 1: number of plugins.
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2603
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2608
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2614
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3498
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3501
+#. translators: 1: plugin name, 2: error message.
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3503
+#. translators: 1: plugin name.
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take "
+"a while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3509
+#. translators: 1: plugin name.
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3509
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3509
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3512
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3517
+#. translators: 1: plugin name.
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3520
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:7
+msgid "Add your Advertisement here"
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:13
+msgid "TG: Advertisement"
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:29
+#: inc/widgets/class-estore-about.php:27
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:35
+#: inc/widgets/class-estore-featured-posts-widget.php:33
+#: inc/widgets/class-estore-posts-grid.php:37
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:35
+#: inc/widgets/class-estore-woocommerce-product-grid.php:37
+#: inc/widgets/classs-estore-logo-widget.php:46
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:32
+msgid "Add your Advertisement Images Here. Any size supported."
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:34
+msgid "Advertisement Image Link "
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:38
+msgid "Advertisement Image "
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:46
+#: inc/widgets/class-estore-posts-grid.php:59
+#: inc/widgets/class-estore-woocommerce-product-grid.php:59
+#: inc/widgets/classs-estore-logo-widget.php:70
+msgid "Choose an image"
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:46
+#: inc/widgets/class-estore-posts-grid.php:59
+#: inc/widgets/class-estore-woocommerce-product-grid.php:59
+#: inc/widgets/classs-estore-logo-widget.php:70
+msgid "Use image"
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:46
+#: inc/widgets/class-estore-posts-grid.php:59
+#: inc/widgets/class-estore-woocommerce-product-grid.php:59
+#: inc/widgets/classs-estore-logo-widget.php:70
+msgid "Select an Image"
+msgstr ""
+
+#: inc/widgets/class-estore-about.php:7
+msgid "Show your about page. Suitable for Click to Action."
+msgstr ""
+
+#: inc/widgets/class-estore-about.php:13
+msgid "TG: About Widget"
+msgstr ""
+
+#: inc/widgets/class-estore-about.php:31
+msgid "Select a page to display Title, Excerpt and Featured image."
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:8
+msgid ""
+"Display latest posts or posts of specific category, which will be used as "
+"the carousel."
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:15
+msgid "TG: Category Carousel"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:39
+#: inc/widgets/class-estore-posts-grid.php:41
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:39
+#: inc/widgets/class-estore-woocommerce-product-grid.php:41
+msgid "Description:"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:43
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:31
+#: inc/widgets/class-estore-featured-posts-widget.php:37
+msgid "Number of posts to display:"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:48
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:36
+#: inc/widgets/class-estore-featured-posts-widget.php:42
+msgid "Show latest Posts"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:49
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:37
+#: inc/widgets/class-estore-featured-posts-widget.php:43
+msgid "Show posts from a category"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:53
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:41
+#: inc/widgets/class-estore-featured-posts-widget.php:47
+#: inc/widgets/class-estore-woocommerce-product-slider.php:41
+msgid "Select category"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:159
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:104
+msgid "Read More"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:8
+msgid ""
+"Display latest posts or posts of specific category, which will be used as "
+"the slider."
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:15
+msgid "TG: Category Slider"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-widget.php:8
+msgid "Display latest posts or posts of specific category"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-widget.php:14
+msgid "TG: Featured Posts"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-widget.php:128
+msgid "Blog Image"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-widget.php:153
+#: template-parts/content.php:45
+msgid "Read more"
+msgstr ""
+
+#: inc/widgets/class-estore-full-width-promo-widget.php:7
+msgid "Display some pages with featured image in horizontal layout."
+msgstr ""
+
+#: inc/widgets/class-estore-full-width-promo-widget.php:12
+msgid "TG: Horizontal Promo"
+msgstr ""
+
+#: inc/widgets/class-estore-full-width-promo-widget.php:29
+#: inc/widgets/class-estore-vertical-promo-widget.php:29
+msgid "Pages"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:7
+msgid "Show Featured Category Posts in Grid Layout."
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:13
+msgid "TG: Category Grid"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:44
+#: inc/widgets/class-estore-woocommerce-product-grid.php:44
+msgid "Add your Category Image here."
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:47
+#: inc/widgets/class-estore-woocommerce-product-grid.php:47
+msgid "Image Link"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:51
+#: inc/widgets/class-estore-woocommerce-product-grid.php:51
+msgid "Category Image"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:63
+#: inc/widgets/class-estore-woocommerce-product-grid.php:63
+msgid "Choose where to align your image."
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:66
+#: inc/widgets/class-estore-woocommerce-product-grid.php:66
+msgid "Right Align"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:67
+#: inc/widgets/class-estore-woocommerce-product-grid.php:67
+msgid "Left Align"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:71
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:53
+#: inc/widgets/class-estore-woocommerce-product-grid.php:71
+msgid "Category:"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:84
+msgid "Number of Posts:"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:153
+#: inc/widgets/class-estore-woocommerce-product-grid.php:173
+#: page-templates/template-wc-collection.php:61
+msgid "View all"
+msgstr ""
+
+#: inc/widgets/class-estore-vertical-promo-widget.php:7
+msgid "Display some pages in vertical layout with featured image."
+msgstr ""
+
+#: inc/widgets/class-estore-vertical-promo-widget.php:12
+msgid "TG: Vertical Promo"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-full-width-promo-widget.php:7
+msgid ""
+"Display WooCommerce Product Categories with featured image in horizontal "
+"layout."
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-full-width-promo-widget.php:12
+msgid "TG: Horizontal Promo WC Category"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-full-width-promo-widget.php:29
+#: inc/widgets/class-estore-woocommerce-vertical-promo-widget.php:29
+msgid "Category"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:7
+msgid "Show WooCommerce Featured Products Carousel."
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:13
+msgid "TG: Products Carousel"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:43
+msgid "Product Source:"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:45
+msgid "Latest Products"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:46
+msgid "Featured Products"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:47
+msgid "On Sale Products"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:48
+msgid "Certain Category"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:68
+#: inc/widgets/class-estore-woocommerce-product-grid.php:85
+msgid "Number of Products:"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:73
+msgid "Check to hide image hover effect."
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:206
+#: inc/widgets/class-estore-woocommerce-product-grid.php:220
+#: inc/woocommerce.php:321 inc/woocommerce.php:345
+msgid "Sale!"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:232
+msgid "Price:"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:239
+#: inc/widgets/class-estore-woocommerce-product-grid.php:238
+#: inc/widgets/class-estore-woocommerce-product-grid.php:274
+msgid "Add to Wishlist"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-grid.php:7
+msgid "Show WooCommerce Featured Products Grid."
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-grid.php:13
+msgid "TG: Product Grid"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-grid.php:200
+msgid "Hot products"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-grid.php:267
+#: woocommerce/loop/price.php:26
+msgid "Price: "
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-slider.php:8
+msgid "Display WooCommerce Product from category."
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-slider.php:15
+msgid "TG: Product Slider"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-slider.php:31
+msgid "Number of products to display:"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-slider.php:36
+msgid "Show Latest Products"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-slider.php:37
+msgid "Show Products from a category"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-slider.php:133
+msgid "Add to Cart"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-vertical-promo-widget.php:7
+msgid ""
+"Display WooCommerce Product Categories in vertical layout with featured "
+"image."
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-vertical-promo-widget.php:12
+msgid "TG: Vertical Promo WC Category"
+msgstr ""
+
+#: inc/widgets/classs-estore-logo-widget.php:8
+msgid "Add your clients/brand logo images here"
+msgstr ""
+
+#: inc/widgets/classs-estore-logo-widget.php:14
+msgid "TG: Logo"
+msgstr ""
+
+#: inc/widgets/classs-estore-logo-widget.php:49
+msgid "Add your clients/brands logo Here"
+msgstr ""
+
+#: inc/widgets/classs-estore-logo-widget.php:56
+msgid "Logo Link "
+msgstr ""
+
+#: inc/widgets/classs-estore-logo-widget.php:61
+msgid "Logo Image "
+msgstr ""
+
+#: inc/widgets.php:40
+msgid "Header Right Sidebar"
+msgstr ""
+
+#: inc/widgets.php:51
+msgid "Front Page: Slider Area"
+msgstr ""
+
+#: inc/widgets.php:62
+msgid "Front Page: Area beside Slider"
+msgstr ""
+
+#: inc/widgets.php:73
+msgid "Front Page Sidebar"
+msgstr ""
+
+#: inc/widgets.php:86
+msgid "Footer Sidebar 1"
+msgstr ""
+
+#: inc/widgets.php:88 inc/widgets.php:99 inc/widgets.php:111
+#: inc/widgets.php:123
+msgid "Show widgets at Footer section"
+msgstr ""
+
+#: inc/widgets.php:97
+msgid "Footer Sidebar 2"
+msgstr ""
+
+#: inc/widgets.php:109
+msgid "Footer Sidebar 3"
+msgstr ""
+
+#: inc/widgets.php:121
+msgid "Footer Sidebar 4"
+msgstr ""
+
+#: inc/woocommerce.php:57
+msgid "Shop Sidebar"
+msgstr ""
+
+#: inc/woocommerce.php:59
+msgid "Widget area for WooCommerce Pages."
+msgstr ""
+
+#: inc/woocommerce.php:83
+msgid "WooCommerce Settings"
+msgstr ""
+
+#: inc/woocommerce.php:85
+msgid "Change WooCommerce settings related to theme."
+msgstr ""
+
+#: inc/woocommerce.php:97
+msgid "Enable My Account Button"
+msgstr ""
+
+#: inc/woocommerce.php:113
+msgid "Enable Currency Symbol"
+msgstr ""
+
+#: inc/woocommerce.php:160
+msgid "Archive Page Layout"
+msgstr ""
+
+#: inc/woocommerce.php:179
+msgid ""
+"This layout will be reflected in archives, categories, search page etc. of "
+"WooCommerce."
+msgstr ""
+
+#: inc/woocommerce.php:197
+msgid "Product Page Layout"
+msgstr ""
+
+#: inc/woocommerce.php:216
+msgid "This layout will be reflected in product page of WooCommerce."
+msgstr ""
+
+#: inc/woocommerce.php:241
+msgid "Check to hide hover effect on Product Images in WooCommerce Archive Pages."
+msgstr ""
+
+#: navigation.php:21 navigation.php:33
+msgid "&larr; Previous"
+msgstr ""
+
+#: navigation.php:22 navigation.php:34
+msgid "Next &rarr;"
+msgstr ""
+
+#: no-results.php:18 template-parts/content-none.php:22
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: no-results.php:23 template-parts/content-none.php:26
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: no-results.php:28 template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: search.php:22
+msgid "Search Results"
+msgstr ""
+
+#: template-parts/content-none.php:16
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-page.php:27 template-parts/content-single.php:47
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-single.php:39
+msgid "Tagged on: "
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:36
+msgid "Cart Totals"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:41 woocommerce/cart/cart-totals.php:42
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:63 woocommerce/cart/cart-totals.php:64
+msgid "Shipping"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:78
+msgid "estimated for %s"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:27
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:26
+msgid "Billing &amp; Shipping"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:30
+msgid "Billing details"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:55
+msgid "Create an account?"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:54
+msgid "Your order"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:26
+msgid "Returning customer?"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:26
+msgid "Click here to login"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:32
+msgid ""
+"If you have shopped with us before, please enter your details in the boxes "
+"below. If you are a new customer, please proceed to the Billing &amp; "
+"Shipping section."
+msgstr ""
+
+#: woocommerce/single-product/related.php:26
+msgid "Related products"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://www.themegrill.com/themes/estore/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"eStore is a clean, beautiful and fully customizable responsive WooCommerce "
+"WordPress theme. This theme packs many premium features and several custom "
+"widgets which helps making your online store professional and well "
+"organized. Theme is fully compatible with WooCommerce and YITH WooCommerce "
+"Wishlist plugins. As an online store owner, attracting customers and "
+"selling products will be lot easier with this theme. Check the demo here: "
+"https://demo.themegrill.com/estore and get free support here: "
+"https://themegrill.com/support-forum/forum/estore-free/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ThemeGrill"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.themegrill.com"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "eStore Home"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "WooCommerce Category Collection"
+msgstr ""
+
+#: comments.php:33
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/functions.php:45 searchform.php:12
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:1121
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2342
+#. translators: 1: install status, 2: update status
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2388
+#. translators: 1: number of plugins.
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: navigation.php:41
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr ""
+
+#: navigation.php:42
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr ""
+
+#: searchform.php:11
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
