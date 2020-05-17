@@ -346,19 +346,19 @@ pipeline {
 
 Vamos a explicar paso a paso lo que hace este Jenkinsfile.
 
-* Fase Build
+#### Fase Build
 
 En esta fase haremos el build de la imagen docker que los desarrolladores hayan cambiado.
 
-* Fase Test
+#### Fase Test
 
 En esta fase, la página sera desactivada por unos segundos, correremos la nueva página y le haremos unos test para que no sobrepasen la CPU y la RAM en un 90% , miraremos que el puerto 80 esté activo y haremos un mini test de rendimiento. Si supera estos test el contenedor se desactivará
 
-* Fase Push
+#### Fase Push
 
 Si pasan todos los tests, el wordpress y el dockerfile pasarán a estar en el branch 'produccion' de nuestro GitHub automáticamente y subiremos la imagen a DockerHub.
 
-* Fase Deploy
+#### Fase Deploy
 
 Acto seguido, la página será subida a producción y podrá ser accedida con los nuevos plugins, temas ya instalados.
 
