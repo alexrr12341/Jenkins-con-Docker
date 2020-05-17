@@ -56,7 +56,9 @@ pipeline {
 
     stage('Deploy') {
       steps {
-	sh 'echo prueba'
+	sh 'docker pull alexrr12341/pagina:stable'
+	sh 'docker stop wordjenkins'
+	sh 'docker run --rm --name wordjenkins -d -p 80:80 alexrr12341/pagina:stable'
       }
     }
   }
