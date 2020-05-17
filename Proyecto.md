@@ -24,7 +24,10 @@
    - [Pipeline Declarativo (Jenkinsfile)](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#72-pipeline-declarativo-jenkinsfile)
 8. [Puesta en marcha](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#8-puesta-en-marcha)
    - [Creacion del entorno](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#81-creaci%C3%B3n-del-entorno)
-10. [Webgrafía](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#10-webgraf%C3%ADa)
+   - [Creación de Jenkinsfile y Dockerfile](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#82-creaci%C3%B3n-de-jenkinsfile-y-dockerfile)
+9. [Conclusión]()
+10. [Pro]
+11. [Webgrafía](https://github.com/alexrr12341/Jenkins-con-Docker/blob/master/Proyecto.md#10-webgraf%C3%ADa)
 ## 1. Introducción
 
 ### 1.1. Descripción del proyecto
@@ -363,8 +366,16 @@ Si pasan todos los tests, el wordpress y el dockerfile pasarán a estar en el br
 Acto seguido, la página será subida a producción y podrá ser accedida con los nuevos plugins, temas ya instalados.
 
 
+## 9. Conclusión
 
-## 10. Webgrafía
+Hemos aprendido a utilizar los pipelines de Jenkins y algunos de sus plugins como son los de métricas y docker/dockerhub, junto a la creación de credenciales y utilización de github dentro de Jenkins.
+También hemos aprendido un poco más sobre la integración continua y hemos realizado una simulación de un entorno de desarrollo/producción que sea automático.
+
+## 10. Siguientes pasos
+
+Debemos aprender más sobre Jenkins, todas las funciones que se pueden realizar en un pipeline y estudiar los plugins, que también se pueden realizar sobre kubernetes
+
+## 11. Webgrafía
 
 [Instalación de Jenkins](https://www.jenkins.io/doc/book/installing/)
 
