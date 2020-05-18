@@ -37,13 +37,10 @@ pipeline {
                 echo "RAM correcta."
 	fi'''
 	sh 'ab -t 10 -c 200 http://localhost/index.php | grep Requests'
+	sh 'docker stop appjenkins'
       }
     }
-    post {
-	always {
-		sh 'docker stop appjenkins'
-	}
-    }
+
     stage('Push') {
       steps {
 	withCredentials([usernamePassword(credentialsId: 'github-credentials', passwordVariable: 'GITHUB_PASS', usernameVariable: 'GITHUB_USER')]) {
