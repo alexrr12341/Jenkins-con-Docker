@@ -1,0 +1,23 @@
+#customize-controls .control-section-online-shop .accordion-section-title:hover,
+#customize-controls .control-section-online-shop .accordion-section-title:focus {
+	background-color: #fff;
+}
+.control-section-online-shop .accordion-section-title .button {
+	margin-top:  -4px;
+	font-weight: 400;
+	margin-left: 8px;
+}
+
+.rtl .control-section-online-shop .accordion-section-title .button {
+	margin-left:  0;
+	margin-right: 8px;
+}
+.at-pro {
+	background: #71b02f!important;
+	color: #fff!important;
+	box-shadow: none!important;
+}
+.at-pro:hover {
+	background: #1a8b0b!important;
+	color: #fff!important;
+}
