@@ -11,9 +11,9 @@ pipeline {
       steps {
         echo 'Testing...'
 	sh 'docker stop wordjenkins'
-        sh 'docker run --rm --name appjenkins -d -p 80:80 pagina:test'
+        sh 'docker run --rm --name appjenkins --network jenkins -d -p 80:80 pagina:test'
         sh '/bin/nc -vz localhost 80'
-	sh label: '', script: '''#!/bin/bash
+	sh label: '', script: '''#!/bin/bash	
             CPU=`top -bn1 | grep "Cpu(s)" | sed "s/.*, *\\([0-9.]*\\)%* id.*/\\1/" | awk \'{print 100 - $1""}\'`
             max=\'90\'
             if [[ $(echo "if (${CPU} > ${max}) 1 else 0" | bc) -eq 1 ]];
@@ -59,6 +59,13 @@ pipeline {
       steps {
 	sh 'docker pull alexrr12341/pagina:stable'
 	sh 'docker run --rm --name wordjenkins --network jenkins -d -p 80:80 alexrr12341/pagina:stable'
+	sh 'docker stop mariadb && docker rm mariadb'
+	sh 'cp bbdd_mariadb/wordpress/wp_options* /opt/bbdd_mariadb/wordpress'
+	sh 'docker run -d --name mariadb --network jenkins -v /opt/bbdd_mariadb:/var/lib/mysql -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=wordpress -e MYSQL_ROOT_PASSWORD=asdasd mariadb'
+	sh label: '', script: '''#!/bin/bash
+	docker exec mariadb mysql -u wordpress -pwordpress wordpress -h mariadb -e "UPDATE wp_options SET option_value=\'http://desarrollo\' Where option_name=\'siteurl\'"
+	docker exec mariadb mysql -u wordpress -pwordpress wordpress -h mariadb -e "UPDATE wp_options SET option_value=\'http://desarrollo\' Where option_name=\'home\'"
+	'''
       }
     }
   }
