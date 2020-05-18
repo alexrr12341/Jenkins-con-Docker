@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t pagina:test .', label: "Build página test"
+        sh 'docker build -t pagina:test .'
       }
     }
 
