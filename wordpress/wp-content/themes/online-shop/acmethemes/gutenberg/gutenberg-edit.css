@@ -1,0 +1,100 @@
+.wp-block .wp-block-heading h1,
+.wp-block .wp-block-heading h1 a,
+.wp-block .wp-block-heading h2,
+.wp-block .wp-block-heading h2 a,
+.wp-block .wp-block-heading h3,
+.wp-block .wp-block-heading h3 a,
+.wp-block .wp-block-heading h4,
+.wp-block .wp-block-heading h4 a,
+.wp-block .wp-block-heading h5,
+.wp-block .wp-block-heading h5 a,
+.wp-block .wp-block-heading h6,
+.wp-block .wp-block-heading h6 a,
+.wp-block .editor-post-title__input,
+.panel-grid-cell .widget-title{
+    color: #000;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+.wp-block .wp-block-heading h1{
+    font-size: 36px;
+     font-weight: 600;
+}
+.wp-block .wp-block-heading h2{
+    font-size: 28px;
+
+}
+.wp-block .wp-block-heading h3{
+    font-size: 20px;   
+
+}
+.wp-block .wp-block-heading h4{
+    font-size: 16px;
+}
+.wp-block .wp-block-heading h5{
+     font-size: 14px;
+}
+.wp-block .wp-block-heading h6{
+    font-size: 12px;
+}
+.wp-block .editor-rich-text ul,
+.wp-block .editor-rich-text ol {
+    margin: 0 0 1.5em 3em;
+}
+.wp-block .editor-rich-text ul {
+    list-style: disc;
+}
+.wp-block .editor-rich-text ol {
+    list-style: decimal;
+}
+.wp-block dt {
+    font-weight: bold;
+}
+.wp-block dd {
+    margin: 0 1.5em 1.5em;
+}
+
+.wp-block address {
+    margin: 0 0 1.5em;
+}
+.edit-post-visual-editor, 
+.edit-post-visual-editor p,
+.editor-styles-wrapper .panel-grid-cell{
+   font-family:'Open Sans', sans-serif !important;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+
+.edit-post-visual-editor .editor-post-title__block,
+.edit-post-visual-editor .editor-block-list__block:not([data-align="full"]):not([data-align="wide"]){
+    max-width: 800px;
+}
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+    border-left:medium none;
+    padding-left: 1em;
+}
+blockquote {
+    position: relative;
+    margin: 50px 0;
+    font-weight: bold;
+    border-top: 2px dashed #e0e0e0;
+    display: block;
+    border-bottom: 1px dashed #e0e0e0;
+    padding: 8px 65px;
+    text-align: center;
+    line-height: 1.6em;
+    font-size: 1.1em;
+    border-left: none;
+    border-right: none;
+}
+blockquote:before {
+    content: "\201C";
+    position: absolute;
+    left: 0;
+    top: 43px;
+    font-size: 75px;
+    color: #e0e0e0;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-style: initial;
+}

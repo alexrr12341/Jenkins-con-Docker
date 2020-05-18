@@ -1,0 +1,96 @@
+<wpml-config>
+    <admin-texts>
+        <key name="theme_mods_online-shop">
+            <key name="online_shop_theme_options">
+                <key name="online-shop-header-bi-number"/>
+                <key name="online-shop-first-info-icon"/>
+                <key name="online-shop-first-info-title"/>
+                <key name="online-shop-first-info-link"/>
+                <key name="online-shop-second-info-icon"/>
+                <key name="online-shop-second-info-title"/>
+                <key name="online-shop-second-info-link"/>
+                <key name="online-shop-third-info-icon"/>
+                <key name="online-shop-third-info-title"/>
+                <key name="online-shop-third-info-link"/>
+                <key name="online-shop-forth-info-icon"/>
+                <key name="online-shop-forth-info-title"/>
+                <key name="online-shop-forth-info-link"/>
+                <key name="online-shop-feature-post-cat"/>
+                <key name="online-shop-feature-product-cat"/>
+                <key name="online-shop-feature-content-options"/>
+                <key name="online-shop-feature-post-number"/>
+                <key name="online-shop-feature-slider-display-cat"/>
+                <key name="online-shop-feature-slider-display-title"/>
+                <key name="online-shop-feature-slider-display-excerpt"/>
+                <key name="online-shop-feature-slider-display-arrow"/>
+                <key name="online-shop-feature-slider-enable-autoplay"/>
+                <key name="online-shop-fs-image-display-options"/>
+                <key name="online-shop-feature-button-text"/>
+                <key name="online-shop-feature-right-content-options"/>
+                <key name="online-shop-feature-right-post-cat"/>
+                <key name="online-shop-feature-right-product-cat"/>
+                <key name="online-shop-feature-right-post-number"/>
+                <key name="online-shop-feature-right-display-title"/>
+                <key name="online-shop-feature-right-display-arrow"/>
+                <key name="online-shop-feature-right-enable-autoplay"/>
+                <key name="online-shop-feature-right-image-display-options"/>
+                <key name="online-shop-feature-right-button-text"/>
+                <key name="online-shop-feature-enable-special-menu"/>
+                <key name="online-shop-enable-header-top"/>
+                <key name="online-shop-header-top-basic-info-display-selection"/>
+                <key name="online-shop-header-top-menu-display-selection"/>
+                <key name="online-shop-header-top-social-display-selection"/>
+                <key name="online-shop-top-right-button-options"/>
+                <key name="online-shop-top-right-button-title"/>
+                <key name="online-shop-popup-widget-title"/>
+                <key name="online-shop-top-right-button-link"/>
+                <key name="online-shop-enable-cart-icon"/>
+                <key name="online-shop-enable-wishlist-icon"/>
+                <key name="online-shop-display-site-logo"/>
+                <key name="online-shop-display-site-title"/>
+                <key name="online-shop-display-site-tagline"/>
+                <key name="online-shop-enable-special-menu"/>
+                <key name="online-shop-special-menu-text"/>
+                <key name="online-shop-menu-right-text"/>
+                <key name="online-shop-menu-right-highlight-text"/>
+                <key name="online-shop-menu-right-text-link"/>
+                <key name="online-shop-menu-right-link-new-tab"/>
+                <key name="online-shop-enable-sticky-menu"/>
+                <key name="online-shop-social-data"/>
+                <key name="online-shop-header-media-position"/>
+                <key name="online-shop-header-image-link"/>
+                <key name="online-shop-header-image-link-new-tab"/>
+                <key name="online-shop-header-logo-ads-display-position"/>
+                <key name="online-shop-footer-copyright"/>
+                <key name="online-shop-enable-footer-power-text"/>
+                <key name="online-shop-blog-archive-img-size"/>
+                <key name="online-shop-blog-archive-more-text"/>
+                <key name="online-shop-single-sidebar-layout"/>
+                <key name="online-shop-front-page-sidebar-layout"/>
+                <key name="online-shop-archive-sidebar-layout"/>
+                <key name="online-shop-enable-sticky-sidebar"/>
+                <key name="online-shop-blog-archive-layout"/>
+                <key name="online-shop-primary-color"/>
+                <key name="online-shop-cat-hover-color"/>
+                <key name="online-shop-show-related"/>
+                <key name="online-shop-related-title"/>
+                <key name="online-shop-related-post-display-from"/>
+                <key name="online-shop-single-img-size"/>
+                <key name="online-shop-wc-shop-archive-sidebar-layout"/>
+                <key name="online-shop-wc-product-column-number"/>
+                <key name="online-shop-wc-shop-archive-total-product"/>
+                <key name="online-shop-wc-single-product-sidebar-layout"/>
+                <key name="online-shop-search-placeholder"/>
+                <key name="online-shop-breadcrumb-options"/>
+                <key name="online-shop-hide-front-page-content"/>
+                <key name="online-shop-reset-options"/>
+            </key>
+        </key>
+    </admin-texts>
+</wpml-config>
+
+
+
+
+
+
