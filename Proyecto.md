@@ -319,7 +319,6 @@ pipeline {
                 echo "RAM correcta."
 	fi'''
 	sh 'ab -t 10 -c 200 http://localhost/index.php | grep Requests'
-        sh 'docker stop appjenkins'
       }
     }
 
@@ -339,8 +338,13 @@ pipeline {
 
     stage('Deploy') {
       steps {
+	sh 'docker stop appjenkins'
 	sh 'docker pull alexrr12341/pagina:stable'
 	sh 'docker run --rm --name wordjenkins --network jenkins -d -p 80:80 alexrr12341/pagina:stable'
+	sh 'docker stop mariadb && docker rm mariadb'
+	sh 'cp bbdd_mariadb/wordpress/wp_options* /opt/bbdd_mariadb/wordpress'
+	sh 'docker run -d --name mariadb --network jenkins -v /opt/bbdd_mariadb:/var/lib/mysql -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=wordpress -e MYSQL_ROOT_PASSWORD=asdasd mariadb'
+	sh './script.sh'
       }
     }
   }
@@ -355,15 +359,15 @@ En esta fase haremos el build de la imagen docker que los desarrolladores hayan 
 
 #### Fase Test
 
-En esta fase, la página sera desactivada por unos segundos, correremos la nueva página y le haremos unos test para que no sobrepasen la CPU y la RAM en un 90% , miraremos que el puerto 80 esté activo y haremos un mini test de rendimiento. Si supera estos test el contenedor se desactivará
+En esta fase, la página sera desactivada por unos segundos, correremos la nueva página y le haremos unos test para que no sobrepasen la CPU y la RAM en un 90% , miraremos que el puerto 80 esté activo y haremos un mini test de rendimiento.
 
 #### Fase Push
 
-Si pasan todos los tests, el wordpress y el dockerfile pasarán a estar en el branch 'produccion' de nuestro GitHub automáticamente y subiremos la imagen a DockerHub.
+Si pasan todos los tests, el wordpress y el dockerfile pasarán a estar en el branch 'producion' de nuestro GitHub automáticamente y subiremos la imagen a DockerHub.
 
 #### Fase Deploy
 
-Acto seguido, la página será subida a producción y podrá ser accedida con los nuevos plugins, temas ya instalados.
+Acto seguido, el contenedor de pruebas se detiene, la página será subida a producción y podrá ser accedida con los nuevos plugins, temas ya instalados, también hará una pequeña modificación en la base de datos para que el cambio de tema sea automático y no tengamos que ir a la pestaña de administración a cambiarlo.
 
 
 ## 9. Conclusión
