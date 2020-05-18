@@ -11,7 +11,7 @@ pipeline {
       steps {
         echo 'Testing...'
 	sh 'docker stop wordjenkins'
-        sh 'docker run --rm --name appjenkins --network jenkins -d -p 80:80 pagina:test'
+        sh 'docker run --name appjenkins --network jenkins -d -p 80:80 pagina:test'
         sh '/bin/nc -vz localhost 80'
 	sh label: '', script: '''#!/bin/bash	
             CPU=`top -bn1 | grep "Cpu(s)" | sed "s/.*, *\\([0-9.]*\\)%* id.*/\\1/" | awk \'{print 100 - $1""}\'`
@@ -37,7 +37,7 @@ pipeline {
                 echo "RAM correcta."
 	fi'''
 	sh 'ab -t 10 -c 200 http://localhost/index.php | grep Requests'
-	sh 'docker stop appjenkins'
+	sh 'docker stop appjenkins && docker rm appjenkins'
       }
     }
 
