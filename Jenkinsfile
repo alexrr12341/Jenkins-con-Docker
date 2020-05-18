@@ -37,7 +37,6 @@ pipeline {
                 echo "RAM correcta."
 	fi'''
 	sh 'ab -t 10 -c 200 http://localhost/index.php | grep Requests'
-	sh 'docker stop appjenkins'
       }
     }
 
@@ -57,12 +56,13 @@ pipeline {
 
     stage('Deploy') {
       steps {
+	sh 'docker stop appjenkins'
 	sh 'docker pull alexrr12341/pagina:stable'
 	sh 'docker run --rm --name wordjenkins --network jenkins -d -p 80:80 alexrr12341/pagina:stable'
 	sh 'docker stop mariadb && docker rm mariadb'
 	sh 'cp bbdd_mariadb/wordpress/wp_options* /opt/bbdd_mariadb/wordpress'
 	sh 'docker run -d --name mariadb --network jenkins -v /opt/bbdd_mariadb:/var/lib/mysql -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=wordpress -e MYSQL_ROOT_PASSWORD=asdasd mariadb'
-	sh 'sh script.sh'
+	sh './script.sh'
       }
     }
   }
