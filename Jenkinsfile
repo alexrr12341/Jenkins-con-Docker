@@ -62,10 +62,7 @@ pipeline {
 	sh 'docker stop mariadb && docker rm mariadb'
 	sh 'cp bbdd_mariadb/wordpress/wp_options* /opt/bbdd_mariadb/wordpress'
 	sh 'docker run -d --name mariadb --network jenkins -v /opt/bbdd_mariadb:/var/lib/mysql -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=wordpress -e MYSQL_ROOT_PASSWORD=asdasd mariadb'
-	sh label: '', script: '''#!/bin/bash
-	docker exec mariadb mysql -u wordpress -pwordpress wordpress -e "UPDATE wp_options SET option_value=\'http://desarrollo\' Where option_name=\'siteurl\'"
-	docker exec mariadb mysql -u wordpress -pwordpress wordpress -e "UPDATE wp_options SET option_value=\'http://desarrollo\' Where option_name=\'home\'"
-	'''
+	sh 'sh script.sh'
       }
     }
   }
