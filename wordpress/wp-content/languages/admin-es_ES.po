@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-05-14 11:04:39+0000\n"
+"PO-Revision-Date: 2020-06-05 16:15:41+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -71,7 +71,7 @@ msgstr "Deja que los usuarios hagan más con dos nuevas API: variaciones y gradi
 
 #: wp-admin/about.php:219
 msgid "If you build plugins, now you can register collections of your blocks by namespace across categories—a great way to get more brand visibility."
-msgstr "Ahora, si creas plugins, puedes registrar las colecciones de tus bloques por el espacio de nombres a través de las categorías, una gran forma de obtener más visibilidad de marca."
+msgstr "Ahora, si creas plugins, puedes registrar las colecciones de tus bloques por el namespace a través de las categorías, una gran forma de obtener más visibilidad de marca."
 
 #: wp-admin/about.php:218
 msgid "<strong>Radically</strong> simpler block styling. Negative margins and default padding are gone! Now you can style blocks the way you need them. And, a refactor got rid of four redundant wrapper divs."
@@ -158,7 +158,7 @@ msgstr "Y si alguna vez has pensado que tu imagen del bloque de medios y texto d
 
 #: wp-admin/about.php:126
 msgid "Guess a whole lot less! Version 5.4 streamlines the whole process for placing and replacing multimedia in every block. Now it works the same way in almost every block!"
-msgstr "¡Imagina que mucho menos! La versión 5.4 agiliza todo el proceso de colocación y sustitución de medios en cada bloque. ¡Ahora funciona de la misma manera en casi todos los bloques!"
+msgstr "¡Piensa mucho menos! La versión 5.4 agiliza todo el proceso de colocación y sustitución de medios en cada bloque. ¡Ahora funciona de la misma manera en casi todos los bloques!"
 
 #: wp-admin/about.php:125
 msgid "New ways with color: Gradients in the Buttons and Cover block, toolbar access to color options in Rich Text blocks, and for the first time, color options in the Group and Columns blocks."
@@ -266,7 +266,7 @@ msgstr "No se han encontrado comentarios en la papelera."
 msgid "File is empty. Please upload something more substantial. This error could also be caused by uploads being disabled in your %1$s file or by %2$s being defined as smaller than %3$s in %1$s."
 msgstr "El archivo está vacío. Por favor, sube algo más sustancial. Este error también puede ser causado porque las subidas estén desactivadas en tu archivo %1$s o porque %2$s esté definido como menor de %3$s en %1$s."
 
-#: wp-admin/includes/class-wp-site-health.php:2296
+#: wp-admin/includes/class-wp-site-health.php:2302
 msgid "A test is unavailable"
 msgstr "No está disponible una prueba"
 
@@ -2782,7 +2782,7 @@ msgid "Privacy Policy Page"
 msgstr "Página de política de privacidad"
 
 #. translators: %s: Page title.
-#: wp-admin/includes/misc.php:1385
+#: wp-admin/includes/misc.php:1408
 msgid "%s (Draft)"
 msgstr "%s (Borrador)"
 
@@ -6026,7 +6026,7 @@ msgstr ""
 
 #. translators: Do not translate USERNAME, ADMIN_URL, EMAIL, SITENAME, SITEURL:
 #. those are placeholders.
-#: wp-admin/includes/misc.php:1306
+#: wp-admin/includes/misc.php:1329
 msgid ""
 "Howdy ###USERNAME###,\n"
 "\n"
@@ -7581,7 +7581,7 @@ msgid "You cannot move this item to the Trash. %s is currently editing."
 msgstr "No puedes mover este elemento a la papelera. %s lo está editando en este momento."
 
 #. translators: %s: User's display name.
-#: wp-admin/includes/misc.php:1075
+#: wp-admin/includes/misc.php:1098
 msgid "%s has taken over and is currently editing."
 msgstr "%s ha tomado la posesión y está editando en este momento."
 
@@ -7635,7 +7635,7 @@ msgid "The Documentation menu below the editor lists the PHP functions recognize
 msgstr "El menú de documentación, bajo el editor, contiene un listado de funciones PHP detectadas en el archivo del plugin. Al hacer clic en Buscar, te lleva a una página web con información sobre esa función concreta."
 
 #. translators: %s: User's display name.
-#: wp-admin/includes/misc.php:1025
+#: wp-admin/includes/misc.php:1048
 #: wp-admin/includes/class-wp-posts-list-table.php:1003
 msgid "%s is currently editing"
 msgstr "%s está editando en este momento"
@@ -8379,7 +8379,7 @@ msgstr[1] "En pausa <span class=\"count\">(%s)</span>"
 
 #. translators: New admin email address notification email subject. %s: Site
 #. title.
-#: wp-admin/includes/misc.php:1359
+#: wp-admin/includes/misc.php:1382
 msgid "[%s] New Admin Email Address"
 msgstr "[%s] Nueva dirección de correo electrónico de administrador"
 
@@ -10907,7 +10907,7 @@ msgstr "Widgets disponibles"
 msgid "Error in displaying the widget settings form."
 msgstr "Error al mostrar el formulario con las opciones del widget."
 
-#: wp-admin/includes/misc.php:1195 wp-admin/includes/post.php:1941
+#: wp-admin/includes/misc.php:1218 wp-admin/includes/post.php:1941
 #: wp-admin/widgets.php:378
 msgid "Error while saving."
 msgstr "Error al guardar los cambios."
@@ -11050,7 +11050,7 @@ msgstr "Nombre"
 msgid "Enable keyboard shortcuts for comment moderation."
 msgstr "Activar los atajos del teclado para la moderación de comentarios."
 
-#: wp-admin/includes/misc.php:924 wp-admin/user-edit.php:295
+#: wp-admin/includes/misc.php:947 wp-admin/user-edit.php:295
 msgid "Admin Color Scheme"
 msgstr "Esquema de color de administración"
 
@@ -11608,7 +11608,7 @@ msgstr "Avatar por defecto"
 #. https://en.wikipedia.org/wiki/Motion_Picture_Association_of_America_film_rating_system
 #: wp-admin/options-discussion.php:255
 msgid "X &#8212; Even more mature than above"
-msgstr "X &#8212; Contenido más adulto que los anteriores."
+msgstr "X &#8212; Contenido más adulto que los anteriores"
 
 #. translators: Content suitability rating:
 #. https://en.wikipedia.org/wiki/Motion_Picture_Association_of_America_film_rating_system
@@ -13873,12 +13873,12 @@ msgid "Someone"
 msgstr "Alguien"
 
 #. translators: %s: Date and time.
-#: wp-admin/includes/misc.php:1203
+#: wp-admin/includes/misc.php:1226
 msgid "Draft saved at %s."
 msgstr "Borrador guardado a las %s."
 
 #. translators: Draft saved date format, see https://www.php.net/date
-#: wp-admin/includes/misc.php:1199
+#: wp-admin/includes/misc.php:1222
 msgid "g:i:s a"
 msgstr "G:i:s"
 
