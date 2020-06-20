@@ -1,0 +1,401 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Masonic\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-06-11 15:57+0545\n"
+"PO-Revision-Date: Sat Aug 08 2015 19:07:00 GMT+0200\n"
+"Last-Translator: GG <kontakt@verwaltung.de>\n"
+"Language-Team: ThemeGrill <themegrill@gmail.com>\n"
+"Language: German\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Loco-Target-Locale: de_DE"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Entschuldigung! Diese Website konnte nicht gefunden werden."
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Perhaps a search may help "
+"you."
+msgstr ""
+"Der Suchbegriff konnte nicht gefunden werden. Bitte versuchen Sie es mit "
+"einem neuen Suchbegriff.\n"
+
+#: comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Ein Gedanke zu &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Gedanken zu &ldquo;%2$s&rdquo;"
+
+#: comments.php:35 comments.php:53
+msgid "Comment navigation"
+msgstr "Kommentar zur Bedienung der Website"
+
+#: comments.php:36 comments.php:54
+msgid "&larr; Older Comments"
+msgstr "&larr; Ältere Kommentare"
+
+#: comments.php:37 comments.php:55
+msgid "Newer Comments &rarr;"
+msgstr "Aktuelle Kommentare &rarr;"
+
+#: comments.php:65
+msgid "Comments are closed."
+msgstr "Kommentare sind nicht möglich.\n"
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: content-none.php:19
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Sind Sie bereit Ihren ersten Beitrag zu veröffentlichten? <a href=\"%1$s\">Get "
+"started here</a>."
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Entschuldigung, es konnten keine Treffer auf Ihren Suchbegriff gefunden "
+"werden. Bitte versuchen Sie andere Suchbegriffe (keywords)"
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Es scheint, wir\n"
+" \n"
+"können\n"
+" \n"
+"rsquo\n"
+" \n"
+"&\n"
+";\n"
+" \n"
+"t\n"
+" \n"
+"finden, was Sie\n"
+" \n"
+"und\n"
+" \n"
+"rsquo; Antwort zur \n"
+"Suche nach\n"
+".\n"
+" \n"
+"Vielleicht\n"
+" kann Ihnen das helfen?"
+
+#: content-page.php:19 content-single.php:35 content.php:44
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: content.php:48
+msgid "Read more"
+msgstr "weiterlesen...\n"
+
+#: footer.php:42
+msgid "&copy; "
+msgstr "&copy; "
+
+#: functions.php:62
+msgid "Primary Menu"
+msgstr "Erstes Menü"
+
+#: functions.php:98
+msgid "Right Sidebar"
+msgstr "Seitenblock rechts"
+
+#: functions.php:107
+msgid "Footer Sidebar One"
+msgstr "Fußbereich Seitenblock 1 (links)"
+
+#: functions.php:116
+msgid "Footer Sidebar Two"
+msgstr "Fußbereich Seitenblock 2 (mittig)"
+
+#: functions.php:125
+msgid "Footer Sidebar Three"
+msgstr "Fußbereich Seitenblock 3 (rechts)"
+
+#: functions.php:218
+msgid "WordPress"
+msgstr "WordPress CMS"
+
+#: functions.php:220
+msgid "ThemeGrill"
+msgstr "ThemeGrill"
+
+#: functions.php:222
+#, php-format
+msgid "Powered by %s"
+msgstr "CMS %s"
+
+#: functions.php:222
+#, php-format
+msgid "Theme: %2$s by %1$s"
+msgstr "CSS-Theme: %2$s von %1$s"
+
+#: functions.php:263
+msgid "Video URL"
+msgstr "Video URL"
+
+#: header.php:24
+msgid "Skip to content"
+msgstr "Sprung zum Inhalt"
+
+#: inc/custom-header.php:35
+msgid "Header Image"
+msgstr "Bilddatei im Seitenkopf (Header)"
+
+#: inc/customizer.php:53
+msgid "Primary Color"
+msgstr "Erste Farbe"
+
+#: inc/customizer.php:58
+msgid "Link Color"
+msgstr "Link Farbe\n"
+
+#: inc/customizer.php:86 inc/customizer.php:98
+msgid "Logo"
+msgstr "Logodatei"
+
+#: inc/customizer.php:88
+msgid "Upload Your Logo Here"
+msgstr "Hochladen des Logos hier\n"
+
+#: inc/customizer.php:105
+msgid "Search Icon"
+msgstr "Symbol Suchfunktion (Lupe)\n"
+
+#: inc/customizer.php:118
+msgid "Check to enable the search icon in menu."
+msgstr ""
+"Auswahl um \n"
+"das Suchsymbol\n"
+" \n"
+"im\n"
+" \n"
+"Menü\n"
+" \n"
+"zu aktivieren."
+
+#: inc/customizer.php:125
+msgid "Featured Image Cropping"
+msgstr "Ausgewähltes Bild zuschneiden (im Format ändern)"
+
+#: inc/customizer.php:138
+msgid ""
+"Check to enable the cropping of the featured image in the blog/archive page, "
+"ie, if unchecked, the height will not be cropped."
+msgstr ""
+"Aktivieren\n"
+", um das\n"
+" \n"
+"Zuschneiden\n"
+" \n"
+"des\n"
+" \n"
+"Ausgewähltes Bild\n"
+" \n"
+"in\n"
+" Blog- bzw.\n"
+" Archiv-\n"
+"Seite\n"
+" \n"
+"zu ermöglichen\n"
+". Falls nicht aktiviert, \n"
+"wird die\n"
+" \n"
+"Höhe\n"
+" \n"
+"nicht beschnitten werden."
+
+#: inc/customizer.php:146
+msgid "Custom CSS"
+msgstr "Eigenes CSS"
+
+#: inc/customizer.php:163
+msgid "Add your custom css here and design live! (for advanced users)"
+msgstr ""
+"Ergänzen Sie Ihr individuelles CSS hier und designen Sie es live! (für "
+"fortgeschrittene Anwender)"
+
+#: inc/extras.php:56
+#, php-format
+msgid "Page %s"
+msgstr "Seite %s"
+
+#: inc/extras.php:89
+#, php-format
+msgid "Follow %s on Twitter"
+msgstr "Folge %s auf Twitter"
+
+#: inc/extras.php:92
+#, php-format
+msgid "Follow %s on Google+"
+msgstr "Folge %s auf Google+"
+
+#: inc/extras.php:95
+#, php-format
+msgid "Follow %s on Facebook"
+msgstr "Folge %s auf Facebook"
+
+#: inc/extras.php:118 inc/template-tags.php:145
+#, php-format
+msgid "Author: %s"
+msgstr "Author: %s"
+
+#: inc/extras.php:126 inc/template-tags.php:151
+#, php-format
+msgid "Day: %s"
+msgstr "Tag: %s"
+
+#: inc/extras.php:129 inc/template-tags.php:149
+#, php-format
+msgid "Month: %s"
+msgstr "Monat: %s"
+
+#: inc/extras.php:132 inc/template-tags.php:147
+#, php-format
+msgid "Year: %s"
+msgstr "Jahr: %s"
+
+#: inc/extras.php:135 inc/template-tags.php:159 sidebar.php:18
+msgid "Archives"
+msgstr "Archive"
+
+#: inc/extras.php:140
+msgid "404: Page Not Found"
+msgstr "Fehler 404: Seite nicht gefunden!"
+
+#: inc/extras.php:142
+#, php-format
+msgid "Search Results For: %s"
+msgstr "Suchergebnisse für: %s"
+
+#: inc/template-tags.php:25
+msgid "Posts navigation"
+msgstr "Übersicht der Beiträge"
+
+#: inc/template-tags.php:28
+msgid "<span><i class=\"fa fa-arrow-circle-o-left\"></i></span> Older posts"
+msgstr "<span><i class=\"fa fa-arrow-circle-o-left\"></i></span> alte Beiträge"
+
+#: inc/template-tags.php:32
+msgid "Newer posts <span><i class=\"fa fa-arrow-circle-o-right\"></i></span>"
+msgstr "aktuelle Beiträge <span><i class=\"fa fa-arrow-circle-o-right\"></i></span>"
+
+#: inc/template-tags.php:36
+msgid "<span><i class=\"fa fa-arrow-circle-o-left\"></i></span> Previous"
+msgstr "<span><i class=\"fa fa-arrow-circle-o-left\"></i></span> Zurück"
+
+#: inc/template-tags.php:40
+msgid "Next <span><i class=\"fa fa-arrow-circle-o-right\"></i></span>"
+msgstr "Vor <span><i class=\"fa fa-arrow-circle-o-right\"></i></span>"
+
+#: inc/template-tags.php:69
+msgid "Post navigation"
+msgstr "Übersicht Beiträge\n"
+
+#: inc/template-tags.php:71
+msgctxt "Previous post link"
+msgid "<span><i class=\"fa fa-arrow-circle-o-left\"></i></span>%title"
+msgstr "<span><i class=\"fa fa-arrow-circle-o-left\"></i></span>%title"
+
+#: inc/template-tags.php:72
+msgctxt "Next post link"
+msgid "%title<span><i class=\"fa fa-arrow-circle-o-right\"></i></span>"
+msgstr "%title<span><i class=\"fa fa-arrow-circle-o-right\"></i></span>"
+
+#: inc/template-tags.php:90
+msgid " "
+msgstr " "
+
+#: inc/template-tags.php:101 inc/template-tags.php:115
+msgid ", "
+msgstr ","
+
+#: inc/template-tags.php:110
+msgid "No Comment"
+msgstr "Kein Kommentar"
+
+#: inc/template-tags.php:110
+msgid "1 Comment"
+msgstr "1 Kommentar"
+
+#: inc/template-tags.php:110
+#, c-format
+msgid "% Comments"
+msgstr "% Kommentare"
+
+#: inc/template-tags.php:119
+#, php-format
+msgid " %1$s"
+msgstr " %1$s"
+
+#: inc/template-tags.php:141
+#, php-format
+msgid "Category: %s"
+msgstr "Kategorie: %s"
+
+#: inc/template-tags.php:143
+#, php-format
+msgid "Tag: %s"
+msgstr "Etikett: %s"
+
+#: inc/template-tags.php:147
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "J"
+
+#: inc/template-tags.php:149
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F J"
+
+#: inc/template-tags.php:151
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "F j, J"
+
+#: inc/template-tags.php:153
+#, php-format
+msgid "Archives: %s"
+msgstr "Achive: %s"
+
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:157
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: searchform.php:13
+msgid "Search for:"
+msgstr "Suche nach:"
+
+#: searchform.php:14
+msgid "Type and hit enter..."
+msgstr "Suchbegriff > Enter"
+
+#: sidebar.php:25
+msgid "Meta"
+msgstr "Meta"
