@@ -44,6 +44,7 @@ pipeline {
       steps {
 	withCredentials([usernamePassword(credentialsId: 'github-credentials', passwordVariable: 'GITHUB_PASS', usernameVariable: 'GITHUB_USER')]) {
 		sh 'rm -r Jenkins-con-Docker'
+		sh 'rm -r /opt/wordpress'
 		sh 'git clone --branch produccion https://github.com/alexrr12341/Jenkins-con-Docker.git'
 		sh 'rm -r Jenkins-con-Docker/wordpress && cp -r wordpress /opt && cp -r Dockerfile wordpress Jenkins-con-Docker && cd Jenkins-con-Docker && git add * && git commit -m "Jenkins Automatico" && git push https://${GITHUB_USER}:${GITHUB_PASS}@github.com/alexrr12341/Jenkins-con-Docker.git'
 	}
@@ -58,7 +59,6 @@ pipeline {
       steps {
 	sh 'docker stop appjenkins'
 	sh 'docker pull alexrr12341/pagina:stable'
-	sh 'rm -r /opt/wordpress'
 	sh 'docker run --rm --name wordjenkins --network jenkins -d -v /opt/wordpress:/var/www/html -p 80:80 alexrr12341/pagina:stable'
 	sh 'docker stop mariadb && docker rm mariadb'
 	sh 'cp bbdd_mariadb/wordpress/wp_options* /opt/bbdd_mariadb/wordpress'
