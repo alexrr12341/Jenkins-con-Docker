@@ -45,7 +45,7 @@ pipeline {
 	withCredentials([usernamePassword(credentialsId: 'github-credentials', passwordVariable: 'GITHUB_PASS', usernameVariable: 'GITHUB_USER')]) {
 		sh 'rm -r Jenkins-con-Docker'
 		sh 'git clone --branch produccion https://github.com/alexrr12341/Jenkins-con-Docker.git'
-		sh 'rm -r Jenkins-con-Docker/wordpress && cp -r Dockerfile wordpress Jenkins-con-Docker && cd Jenkins-con-Docker && git add * && git commit -m "Jenkins Automatico" && git push https://${GITHUB_USER}:${GITHUB_PASS}@github.com/alexrr12341/Jenkins-con-Docker.git'
+		sh 'rm -r Jenkins-con-Docker/wordpress && cp -r wordpress /opt && cp -r Dockerfile wordpress Jenkins-con-Docker && cd Jenkins-con-Docker && git add * && git commit -m "Jenkins Automatico" && git push https://${GITHUB_USER}:${GITHUB_PASS}@github.com/alexrr12341/Jenkins-con-Docker.git'
 	}
         withDockerRegistry([ credentialsId: "dockerhub", url: "" ]) {
 		sh 'docker tag pagina:test alexrr12341/pagina:stable'
