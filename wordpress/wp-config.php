@@ -32,7 +32,7 @@ define( 'DB_PASSWORD', 'wordpress' );
 define( 'DB_HOST', 'mariadb' );
 
 /** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define( 'DB_CHARSET', 'utf8' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         ',J9R=q7fj9Rg.W%|ej[A[Iovw8C1qfs-c2v{P,sG>p[>s~6z:KcdHG@/>`+UD~H)' );
-define( 'SECURE_AUTH_KEY',  'SgoIlz~}<Pe`lM0( ?nYFRH@nVxR/ Je=9KJTeuaCVpMQ3^(T1[DBJI8l hM0$wK' );
-define( 'LOGGED_IN_KEY',    '3KY0K`@B]HE6Y=@:bY_0xD}DSsw%F ??wOZj7.]&F-X3Hd)thG9djQnTiRZ:b)tZ' );
-define( 'NONCE_KEY',        '.*<f{N<X;hlRT<da6m4xg]bqaut9%#F[g)Q9IHdJ%7&Rkd>Ejl=Db]1Xy-!bp/6O' );
-define( 'AUTH_SALT',        'S:EkdjPQ<a6Oeouxgl`5Saf>,B-wL6a.[i*8a1x.V+A^>Bd7HC{0*r~i-,AA{jzf' );
-define( 'SECURE_AUTH_SALT', 'K`*N9D#H1td&MEHNW&R@eX8mZIBCgJ#onbi#J)=AZgD A?mr,}B@fP+#jD<eH=5#' );
-define( 'LOGGED_IN_SALT',   '2uL{c/1Z0!j.J ;0)P*-A x;iM:FCs|oJSZR8>cg4^)0O-:M!kW?yEi`[A?{8bYR' );
-define( 'NONCE_SALT',       'E<7w9X+/@ 49[{aS:V,Y7cj-@e[17QP*X`0I8$D;VA!+x?ZzLZu:Wg09(^/Z{E67' );
+define( 'AUTH_KEY',         'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+define( 'NONCE_KEY',        'put your unique phrase here' );
+define( 'AUTH_SALT',        'put your unique phrase here' );
+define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+define( 'NONCE_SALT',       'put your unique phrase here' );
 
 /**#@-*/
 
@@ -88,4 +88,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
-
